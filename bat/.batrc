@@ -1,0 +1,5 @@
+--map-syntax=".gitignore_global:Git Ignore"
+--map-syntax=".rgignore_global:Git Ignore"
+--paging="auto"
+--style="plain"
+--theme="Visual Studio Dark+"
