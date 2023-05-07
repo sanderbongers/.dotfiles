@@ -1,0 +1,10 @@
+.DS_Store
+.git/
+.Trash/
+Applications/
+[Cc]ache/
+Code Cache/
+Library/
+System/
+node_modules/
+
