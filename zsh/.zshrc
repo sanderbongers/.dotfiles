@@ -39,6 +39,7 @@ setopt hist_reduce_blanks
 setopt hist_ignore_space
 setopt hist_no_functions
 ## Input/output
+setopt correct_all
 setopt interactive_comments
 
 # Functions
@@ -63,6 +64,7 @@ export EDITOR=/usr/bin/vim
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export KEYTIMEOUT=1
+export CORRECT_IGNORE_FILE=".*"
 export GPG_TTY=$TTY
 export HOMEBREW_BREWFILE=$HOME/.config/Brewfile
 export HOMEBREW_NO_INSTALL_CLEANUP=1
