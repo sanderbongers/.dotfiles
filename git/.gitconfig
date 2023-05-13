@@ -24,7 +24,7 @@
 [core]
 	longpaths = true
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 [pull]
 	rebase = true
 [fetch]
@@ -37,3 +37,5 @@
 	autoSetupRemote = true
 [gpg]
 	format = ssh
+[include]
+	path = ~/.gitconfig.local
