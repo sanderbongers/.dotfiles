@@ -4,8 +4,6 @@ zsh_plugins=(
   roosta/fif
   unixorn/tumult.plugin.zsh
 )
-zsh_plugins_dir="$zsh_dir/plugins"
-[[ -d "$zsh_plugins_dir" ]] || mkdir -p "$zsh_plugins_dir"
 
 # Download plugins
 for plugin in "${zsh_plugins[@]}"; do

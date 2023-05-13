@@ -1,10 +1,8 @@
 # Fig pre block
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 
-readonly zsh_dir="$HOME/.config/zsh"
-
 # Load zsh configuration files
-for config_file in "$zsh_dir"/config/*.zsh; do
+for config_file in "$zsh_config_dir"/*.zsh; do
 	source "$config_file"
 done
 
