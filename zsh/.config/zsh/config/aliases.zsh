@@ -32,4 +32,5 @@ alias gsh="git show"
 
 # Application replacements
 alias cat="bat"
+alias sed="gsed"
 alias vim="nvim"
