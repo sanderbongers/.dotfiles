@@ -11,5 +11,5 @@
 
 - `$ git clone git@github.com:sanderbongers/.dotfiles.git ~/.dotfiles`
 - `$ cd ~/.dotfiles`
-- `$ make install` to install Homebrew packages
+- `$ make install` to install Homebrew packages, set macOS user defaults, etc.
 - `$ make stow` to create all simlinks (dry run with `$ make simulate`)
