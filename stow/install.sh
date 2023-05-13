@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Homebrew
-$(which brew) bundle install
+# Install Homebrew packages
+if type "brew" &>/dev/null; then
+  brew bundle install
+fi
