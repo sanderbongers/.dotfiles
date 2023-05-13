@@ -1,0 +1,26 @@
+# Changing directories
+setopt auto_cd
+setopt auto_pushd
+setopt cd_silent
+setopt cdable_vars
+setopt pushd_ignore_dups
+setopt pushd_silent
+# Completion
+setopt no_auto_list
+setopt no_auto_menu
+setopt no_list_beep
+# Globbing
+setopt extended_glob
+setopt numeric_glob_sort
+setopt globdots
+# History
+setopt inc_append_history
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+setopt hist_reduce_blanks
+setopt hist_ignore_space
+setopt hist_no_functions
+# Input/output
+setopt correct_all
+setopt interactive_comments
