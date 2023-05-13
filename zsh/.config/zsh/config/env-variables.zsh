@@ -9,7 +9,7 @@ export CORRECT_IGNORE_FILE=".*"
 export GPG_TTY=$TTY
 
 # Homebrew
-export HOMEBREW_BREWFILE=$HOME/.config/Brewfile
+export HOMEBREW_BUNDLE_FILE=$HOME/.config/Brewfile
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # Ripgrep
