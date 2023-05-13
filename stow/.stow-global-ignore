@@ -11,7 +11,7 @@ CVS
 
 \.git
 
-.+~     # emacs backup files
+.+~ # emacs backup files
 \#.\*\# # emacs autosave files
 
 ^/README._
@@ -19,3 +19,5 @@ CVS
 ^/COPYING
 
 \.DS_Store
+
+install\.sh
