@@ -5,6 +5,7 @@ alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -Iv"
 alias mkdir="mkdir -pv"
+alias tree="tree -a"
 
 # Directory stack
 alias d="dirs -v"
@@ -29,6 +30,6 @@ alias gpl="git pull"
 alias gs="git status -sb"
 alias gsh="git show"
 
-# Other
-alias tree="tree -a"
+# Application replacements
+alias cat="bat"
 alias vim="nvim"
