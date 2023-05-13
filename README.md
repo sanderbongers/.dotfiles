@@ -11,5 +11,5 @@
 
 - `$ git clone git@github.com:sanderbongers/.dotfiles.git ~/.dotfiles`
 - `$ cd ~/.dotfiles`
-- `$ make` to create all simlinks (dry run with `$ make simulate`)
-- `$ brew bundle install` to install Homebrew packages
+- `$ make install` to install Homebrew packages
+- `$ make stow` to create all simlinks (dry run with `$ make simulate`)
