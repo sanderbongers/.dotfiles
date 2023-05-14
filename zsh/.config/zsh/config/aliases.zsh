@@ -39,3 +39,4 @@ fi
 if command_exists "bat"; then alias cat="bat"; fi
 if command_exists "gsed"; then alias sed="gsed"; fi
 if command_exists "nvim"; then alias vim="nvim"; fi
+if command_exists "pgcli"; then alias psql="pgcli"; fi
