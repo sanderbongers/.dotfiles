@@ -5,6 +5,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export KEYTIMEOUT=1
 export CORRECT_IGNORE_FILE=".*"
 
+# Exa
+export TIME_STYLE=long-iso
+
 # GPG
 export GPG_TTY=$TTY
 

@@ -1,6 +1,6 @@
 # General commands
-alias ll="ls -lahF"
-alias la="ls -A"
+alias ls="ls --color=auto"
+alias ll="ls --color=auto -lahF"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -Iv"
@@ -30,7 +30,12 @@ alias gpl="git pull"
 alias gs="git status -sb"
 alias gsh="git show"
 
-# Application replacements
-alias cat="bat"
-alias sed="gsed"
-alias vim="nvim"
+# Tool replacements
+if command_exists "exa"; then
+  unalias ls && alias ls="exa"
+  unalias ll && alias ll="exa --long --all --binary --classify --header --group --time-style=long-iso"
+  unalias tree && alias tree="exa --tree --all --ignore-glob=.git"
+fi
+if command_exists "bat"; then alias cat="bat"; fi
+if command_exists "gsed"; then alias sed="gsed"; fi
+if command_exists "nvim"; then alias vim="nvim"; fi
