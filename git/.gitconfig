@@ -25,6 +25,7 @@
 	longpaths = true
 	autocrlf = input
 	excludesfile = ~/.gitignore
+	pager = delta
 [pull]
 	rebase = true
 [fetch]
@@ -34,8 +35,17 @@
 [commit]
 	gpgsign = true
 [push]
-	autoSetupRemote = true
+	autoSetupRemote = false
 [gpg]
 	format = ssh
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+	line-numbers = true
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
 [include]
 	path = ~/.gitconfig.local
