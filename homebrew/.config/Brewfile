@@ -40,6 +40,7 @@ brew "dnsmasq", restart_service: true
 brew "docker"
 brew "docker-compose"
 brew "duti"
+brew "exa"
 brew "exiftool"
 brew "fcrackzip"
 brew "fd"
