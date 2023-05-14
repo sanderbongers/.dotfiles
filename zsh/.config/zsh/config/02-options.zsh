@@ -22,4 +22,5 @@ setopt hist_reduce_blanks
 setopt hist_ignore_space
 setopt hist_no_functions
 # Input/output
+setopt no_correct
 setopt interactive_comments
