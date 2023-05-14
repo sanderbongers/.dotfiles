@@ -6,8 +6,8 @@ setopt cdable_vars
 setopt pushd_ignore_dups
 setopt pushd_silent
 # Completion
-setopt no_auto_list
-setopt no_auto_menu
+setopt auto_list
+setopt auto_menu
 setopt no_list_beep
 # Globbing
 setopt extended_glob
