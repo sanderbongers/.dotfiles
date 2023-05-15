@@ -39,4 +39,9 @@ defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true     
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true                             # Show file extensions
 
 # Restart affected applications
-for app in Dock Finder Safari SystemUIServer; do killall "$app" >/dev/null 2>&1; done
+for app in Dock Finder Safari SystemUIServer; do
+  killall "$app" &>/dev/null
+done
+
+# Add SSH key to keychain
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
