@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+# Install Homebrew
+if ! type "brew" &>/dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 # Install Homebrew packages
-if type "brew" &>/dev/null; then
-  if ! brew bundle check; then
-    brew bundle install --no-restart
-  fi
+if ! brew bundle check --verbose; then
+  brew bundle install --no-restart
 fi
 
 # Set macOS user defaults
