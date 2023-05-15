@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-# Install Homebrew
-if ! type "brew" &>/dev/null; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-# Install Homebrew packages
-if ! brew bundle check --verbose; then
-  brew bundle install --no-restart
-fi
+# Install Homebrew and packages
+type "brew" &>/dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew bundle check || brew bundle install
 
 # Set macOS user defaults
 chflags nohidden ~/Library                                                                  # Show the ~/Library folder
@@ -41,9 +36,7 @@ defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true     
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true                             # Show file extensions
 
 # Restart affected applications
-for app in Dock Finder Safari SystemUIServer; do
-  killall "$app" &>/dev/null
-done
+for app in Dock Finder Safari SystemUIServer; do killall "$app" &>/dev/null; done
 
 # Add SSH key to keychain
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
