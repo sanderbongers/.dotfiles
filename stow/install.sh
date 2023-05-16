@@ -39,4 +39,4 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true                 
 for app in Dock Finder Safari SystemUIServer; do killall "$app" &>/dev/null; done
 
 # Add SSH key to keychain
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+/usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519
