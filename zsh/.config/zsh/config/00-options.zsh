@@ -24,3 +24,5 @@ setopt hist_no_functions
 # Input/output
 setopt no_correct
 setopt interactive_comments
+# Prompting
+setopt prompt_subst
