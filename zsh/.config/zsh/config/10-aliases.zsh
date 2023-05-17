@@ -29,6 +29,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gs="git status -sb"
 alias gsh="git show"
+alias groot='cd $(git rev-parse --show-toplevel)'
 
 # Tool replacements
 if command_exists "exa"; then
