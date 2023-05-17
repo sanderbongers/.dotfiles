@@ -1,3 +1,10 @@
+# Directory stack
+alias d="dirs -v"
+for index in {1..9}; do
+  alias "$index"="cd +${index}"
+  unset index
+done
+
 # General commands
 alias ls="ls --color=auto"
 alias ll="ls --color=auto -lahF"
@@ -6,13 +13,6 @@ alias mv="mv -iv"
 alias rm="rm -Iv"
 alias mkdir="mkdir -pv"
 alias tree="tree -a"
-
-# Directory stack
-alias d="dirs -v"
-for index in {1..9}; do
-  alias "$index"="cd +${index}"
-  unset index
-done
 
 # Git
 alias ga="git add"
@@ -30,6 +30,9 @@ alias gpl="git pull"
 alias gs="git status -sb"
 alias gsh="git show"
 alias groot='cd $(git rev-parse --show-toplevel)'
+
+# Other
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Tool replacements
 if command_exists "exa"; then
