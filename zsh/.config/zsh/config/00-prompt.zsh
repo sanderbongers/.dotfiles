@@ -1,5 +1,5 @@
 # Prompt
-export PS1="%1~ $ "
+export PS1='%1~ %(?.~.%F{red}~%f) '
 
 # VCS info
 autoload -Uz vcs_info
