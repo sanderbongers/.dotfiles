@@ -7,5 +7,5 @@ precmd() {
 }
 
 # Prompts
-PROMPT='%1~ %(?.$.%F{red}$%f) '
+PROMPT='%1~ $ '
 RPROMPT='${vcs_info_msg_0_}'
