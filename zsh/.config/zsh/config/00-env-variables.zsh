@@ -1,5 +1,5 @@
 # zsh
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/local/bin/nvim
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export KEYTIMEOUT=1
