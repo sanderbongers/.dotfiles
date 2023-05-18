@@ -37,7 +37,7 @@
 [log]
 	date = relative
 [push]
-	autoSetupRemote = false
+	autoSetupRemote = true
 [gpg]
 	format = ssh
 [interactive]
