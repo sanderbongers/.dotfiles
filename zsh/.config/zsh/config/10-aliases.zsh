@@ -37,7 +37,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # Tool replacements
 if command_exists "exa"; then
   unalias ls && alias ls="exa"
-  unalias ll && alias ll="exa --long --all --binary --classify --header --group --time-style=long-iso"
+  unalias ll && alias ll="exa --long --all --binary --classify --group --time-style=long-iso"
   unalias tree && alias tree="exa --tree --all --ignore-glob=.git"
 fi
 if command_exists "bat"; then alias cat="bat"; fi
