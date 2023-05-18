@@ -3,6 +3,7 @@ zsh_plugins=(
   zsh-users/zsh-syntax-highlighting
   roosta/fif
   unixorn/tumult.plugin.zsh
+  wfxr/forgit
 )
 
 # Download plugins

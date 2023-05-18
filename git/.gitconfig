@@ -26,14 +26,16 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	pager = delta
-[pull]
-	rebase = true
-[fetch]
-	prune = true
 [init]
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[log]
+	date = relative
 [push]
 	autoSetupRemote = false
 [gpg]

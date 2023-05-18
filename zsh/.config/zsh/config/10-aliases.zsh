@@ -15,7 +15,7 @@ alias mkdir="mkdir -pv"
 alias tree="tree -a"
 
 # Git
-alias ga="git add"
+# alias ga="git add"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gcob="git checkout -b"
