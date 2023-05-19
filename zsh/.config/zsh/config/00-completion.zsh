@@ -1,5 +1,3 @@
-autoload -Uz compinit && compinit
-
 # Load completion listing module
 zmodload zsh/complist
 
