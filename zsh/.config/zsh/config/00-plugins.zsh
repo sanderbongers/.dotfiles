@@ -1,9 +1,11 @@
 zsh_plugins=(
   changyuheng/zsh-interactive-cd
+  marlonrichert/zsh-autocomplete
   roosta/fif
   unixorn/tumult.plugin.zsh
   wfxr/forgit
   zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
 )
 
