@@ -15,9 +15,11 @@ export GPG_TTY=$TTY
 export HOMEBREW_BUNDLE_FILE=$HOME/.config/Brewfile
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 
-# password-store
+# pass
 export PASSWORD_STORE_GENERATED_LENGTH=20
 export PASSWORD_STORE_CHARACTER_SET="a-zA-Z0-9"
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+export PASSWORD_STORE_EXTENSIONS_DIR=/usr/local/lib/python3.11/site-packages/usr/lib/password-store/extensions
 
 # Ripgrep
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
