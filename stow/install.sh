@@ -1,22 +1,14 @@
 #!/usr/bin/env bash
 
-# Set fish as default shell or fallback to zsh
-shell_path="$(command -v fish || command -v zsh)"
-if [[ $shell_path && $shell_path != "$SHELL" ]]; then
-  # Add to /etc/shells if not present
-  if ! grep -Fxq "$shell_path" /etc/shells; then
-    echo "$shell_path" | sudo tee -a /etc/shells
-  fi
-
-  # Set as default shell
-  chsh -s "$shell_path"
-fi
-
 # If on macOS
 if [[ $(uname -s) == "Darwin" ]]; then
   # Install Homebrew and packages
   command -v "brew" &>/dev/null || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
   brew bundle check || brew bundle install
+
+  # Add SSH key to keychain
+  ssh_key_path="$HOME/.ssh/id_ed25519"
+  [[ -f "$ssh_key_path" ]] && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
 
   # Set macOS user defaults
   chflags nohidden ~/Library                                                                  # Show the ~/Library folder
@@ -48,8 +40,16 @@ if [[ $(uname -s) == "Darwin" ]]; then
   defaults write com.apple.TextEdit RichText -bool false                                      # Use plain text mode for new TextEdit documents
   defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true                 # Show icons in window title bars
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true                             # Show file extensions
+fi
 
-  # Add SSH key to keychain
-  ssh_key_path="$HOME/.ssh/id_ed25519"
-  [[ -f "$ssh_key_path" ]] && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
+# Set fish as default shell or fallback to zsh
+shell_path="$(command -v fish || command -v zsh)"
+if [[ $shell_path && $shell_path != "$SHELL" ]]; then
+  # Add to /etc/shells if not present
+  if ! grep -Fxq "$shell_path" /etc/shells; then
+    echo "$shell_path" | sudo tee -a /etc/shells
+  fi
+
+  # Set as default shell
+  chsh -s "$shell_path"
 fi
