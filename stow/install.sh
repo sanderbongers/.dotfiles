@@ -50,5 +50,6 @@ if [[ $(uname -s) == "Darwin" ]]; then
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true                             # Show file extensions
 
   # Add SSH key to keychain
-  [[ -f $HOME/.ssh/id_ed25519 ]] && /usr/bin/ssh-add --apple-use-keychain "$HOME/.ssh/id_ed25519"
+  ssh_key_path="$HOME/.ssh/id_ed25519"
+  [[ -f "$ssh_key_path" ]] && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
 fi
