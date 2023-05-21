@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Set fish as default shell, zsh as fallback
+# Set fish as default shell or fallback to zsh
 shell_path="$(command -v fish || command -v zsh)"
 if [[ $shell_path && $shell_path != "$SHELL" ]]; then
   # Add to /etc/shells if not present
