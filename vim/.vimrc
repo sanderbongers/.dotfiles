@@ -1,4 +1,10 @@
+augroup color_overrides
+	autocmd!
+	autocmd ColorScheme * highlight Normal ctermbg=NONE
+augroup end
+
 colorscheme ghdark
+
 syntax on
 
 set ignorecase
