@@ -16,5 +16,5 @@ fi
 
 # Use bat to colorize previews
 if command_exists "bat"; then
-  export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview 'bat --color=always --line-range=:100 {}'"
+  export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color=always --line-range=:100 {}'"
 fi
