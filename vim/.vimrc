@@ -3,7 +3,7 @@ augroup color_overrides
 	autocmd ColorScheme * highlight Normal ctermbg=NONE
 augroup end
 
-colorscheme ghdark
+" colorscheme codedark
 
 syntax on
 
