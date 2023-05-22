@@ -6,4 +6,4 @@ else
 end
 
 # Lazy load nvm
-load_nvm >/dev/stderr
+test -d $HOME/.nvm && load_nvm >/dev/stderr
