@@ -1,5 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR __fish_git_prompt_show_informative_status:true
+SETUVAR __fish_git_prompt_showcolorhints:true
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_plugins:wfxr/forgit\x1eedc/bass
