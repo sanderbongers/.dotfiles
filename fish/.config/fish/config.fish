@@ -1,5 +1,5 @@
 # Load local configuration
-set -l local_config (status dirname)/config.local.fish
+set -l local_config (dirname "$0")/config.local.fish
 test -f $local_config; and source $local_config
 
 # Add directories to $PATH
