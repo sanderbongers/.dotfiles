@@ -15,7 +15,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gs="git status -sb"
 alias gsh="git show"
-alias groot='cd $(git rev-parse --show-toplevel)'
+alias groot='cd (git rev-parse --show-toplevel)'
 
 # Other
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
