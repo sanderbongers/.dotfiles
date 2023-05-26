@@ -21,3 +21,5 @@ CVS
 \.DS_Store
 
 install\.sh
+install-macos\.sh
+install-linux\.sh
