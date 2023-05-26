@@ -1,2 +1,5 @@
 .gitconfig.local
 config.local.fish
+
+zsh/.config/plugins
+!zsh/config/plugins/.gitkeep
