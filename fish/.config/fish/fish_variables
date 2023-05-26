@@ -3,6 +3,11 @@
 SETUVAR __fish_git_prompt_show_informative_status:true
 SETUVAR __fish_git_prompt_showcolorhints:true
 SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_za:zoxide\x20add
+SETUVAR _fish_abbr_zq:zoxide\x20query
+SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di
+SETUVAR _fish_abbr_zr:zoxide\x20remove
 SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_plugins:wfxr/forgit\x1eedc/bass
 SETUVAR _fisher_upgraded_to_4_4:\x1d
