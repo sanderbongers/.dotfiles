@@ -7,6 +7,7 @@ sudo apt update -y
 sudo apt install -y \
 stow \
 fish \
+zoxide \
 fzf \
 ripgrep \
 fd-find \
