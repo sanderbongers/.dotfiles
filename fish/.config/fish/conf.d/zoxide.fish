@@ -1,1 +1,3 @@
-zoxide init fish | source
+if command -sq zoxide
+  zoxide init fish | source
+end
