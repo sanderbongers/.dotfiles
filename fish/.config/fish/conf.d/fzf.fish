@@ -8,8 +8,9 @@ if command -sq rg
 end
 
 # Use fd to find directories
-if command -sq fd
-    set -gx FZF_ALT_C_COMMAND "fd --type directory --hidden"
+set -l fd (command -s fd || command -s fdfind)
+if command -sq $fd
+    set -gx FZF_ALT_C_COMMAND "$fd --type directory --hidden"
 end
 
 # Use bat to colorize previews
