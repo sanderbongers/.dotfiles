@@ -1,4 +1,4 @@
 # Load zsh configuration files
-for config_file in "$zsh_config_dir"/*.zsh &>/dev/null; do
+for config_file in "$zsh_config_dir"/*.zsh; do
 	source "$config_file"
-done
+done >/dev/null 2>&1
