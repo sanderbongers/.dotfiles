@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [[ $(uname -s) != "Darwin" ]]; then
-  echo "Not on macOS, skipping..."
-  exit 1
+	echo "Not on macOS, skipping..."
+	exit 1
 fi
 
 # Install Homebrew and packages

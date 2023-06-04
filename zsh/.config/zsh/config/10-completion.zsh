@@ -7,5 +7,5 @@ bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 # Use zoxide as backend for cd completion
 +autocomplete:recent-directories() {
-  reply=(${(f)"$(zoxide query --list)"})
+    reply=(${(f)"$(zoxide query --list)"})
 }

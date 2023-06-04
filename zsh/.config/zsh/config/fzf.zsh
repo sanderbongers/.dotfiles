@@ -5,16 +5,16 @@ export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+ab
 
 # Use ripgrep to find files
 if command_exists "rg"; then
-  export FZF_DEFAULT_COMMAND="rg --files 2> /dev/null"
-  export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+	export FZF_DEFAULT_COMMAND="rg --files 2> /dev/null"
+	export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 fi
 
 # Use fd to find directories
 if command_exists "fd"; then
-  export FZF_ALT_C_COMMAND="fd --type directory --hidden"
+	export FZF_ALT_C_COMMAND="fd --type directory --hidden"
 fi
 
 # Use bat to colorize previews
 if command_exists "bat"; then
-  export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color=always --line-range=:100 {}'"
+	export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color=always --line-range=:100 {}'"
 fi
