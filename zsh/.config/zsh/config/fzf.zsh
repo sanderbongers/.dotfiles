@@ -1,5 +1,7 @@
 [[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
 
+bindkey 'ç' fzf-history-widget
+
 export FZF_DEFAULT_OPTS="--height 50% --reverse --border --multi --exact --preview '' --preview-window hidden --bind 'ctrl-/:toggle-preview'"
 export FZF_CTRL_R_OPTS="--bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
@@ -11,7 +13,7 @@ fi
 
 # Use fd to find directories
 if command_exists "fd"; then
-	export FZF_ALT_C_COMMAND="fd --type directory --hidden"
+	export FZF_ALT_C_COMMAND="fd --type directory"
 fi
 
 # Use bat to colorize previews
