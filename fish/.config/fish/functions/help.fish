@@ -5,9 +5,9 @@ function help
     end
 
     if command -sq bat
-        $argv --help 2>&1 | bat --language=help
+        $argv --help | bat --language=help
         return
     end
 
-    $argv --help 2>&1
+    $argv --help
 end
