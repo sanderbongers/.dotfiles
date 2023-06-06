@@ -12,8 +12,8 @@ Darwin)
 	;;
 esac
 
-# Set fish as default shell or fallback to zsh
-shell_path="$(command -v fish || command -v zsh)"
+# Set fish as default shell
+shell_path="$(command -v fish)"
 if [[ $shell_path && $shell_path != "$SHELL" ]]; then
 	# Add to /etc/shells if not present
 	if ! grep -Fxq "$shell_path" /etc/shells; then
