@@ -1,10 +1,7 @@
 # https://github.com/junegunn/fzf
 
-set -gx FZF_DEFAULT_OPTS "--reverse --multi --exact --preview-window hidden --bind 'ctrl-/:toggle-preview'"
-set -gx FZF_CTRL_R_OPTS "--select-1 --exit-0
-    --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
-    --header 'Press CTRL-Y to copy'"
-set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}"
+set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --preview-window hidden --bind 'ctrl-/:toggle-preview'"
+set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}'"
 
 # Use ripgrep to find files
 if command -sq rg
@@ -20,5 +17,5 @@ end
 
 # Use bat to colorize previews
 if command -sq bat
-    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color=always --line-range=:500 {}'"
+    set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color always --line-range :500 {}'"
 end
