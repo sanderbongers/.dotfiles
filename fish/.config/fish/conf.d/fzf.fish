@@ -1,6 +1,6 @@
 # https://github.com/junegunn/fzf
 
-set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --preview-window hidden --bind 'ctrl-/:toggle-preview'"
+set -gx FZF_DEFAULT_OPTS "--height 50% --reverse --border --multi --exact --preview-window hidden --bind 'ctrl-/:toggle-preview'"
 set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}'"
 
 # Use ripgrep to find files
