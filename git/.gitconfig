@@ -12,6 +12,8 @@
 [init]
     defaultBranch = main
 [alias]
+    b = branch
+    ba = branch -a
     cm = commit -m
     co = checkout
     cob = checkout -b
@@ -34,14 +36,10 @@
     autoSetupRemote = true
 [gpg]
     format = ssh
-[interactive]
-    diffFilter = delta --color-only
 [delta]
     navigate = true
     line-numbers = true
-[merge]
-    conflictstyle = diff3
-[diff]
-    colorMoved = default
+    file-decoration-style = "blue box"
+    hunk-header-style = "omit"
 [include]
     path = ~/.gitconfig.local
