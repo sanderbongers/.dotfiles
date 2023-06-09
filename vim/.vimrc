@@ -35,3 +35,6 @@ set rtp+=/usr/local/opt/fzf
 set nobackup
 set nowritebackup
 set noswapfile
+
+map <ScrollWheelDown> j
+map <ScrollWheelUp> k
