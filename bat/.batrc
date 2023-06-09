@@ -1,5 +1,4 @@
 --map-syntax=".gitignore:Git Ignore"
 --map-syntax=".rgignore:Git Ignore"
---paging="never"
 --style="plain"
 --theme="Visual Studio Dark+"
