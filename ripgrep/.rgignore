@@ -1,9 +1,22 @@
+# macOS
 .DS_Store
-.git/
 .Trash/
-Applications/
-[Cc]ache/
-Code Cache/
-Library/
-System/
+/private/var/folders/
+/System/Volumes/Data/
+
+# Caches
+[Cc]ache?/
+
+# Fish command history
+.local/share/fish/fish_history
+
+# Node.js
+_cacache/
 node_modules/
+
+# Sublime Text
+Code\ Cache/
+
+# Visual Studio Code
+/Library/Application\ Support/Code/User/History/
+/Library/Application\ Support/Code/User/workspaceStorage
