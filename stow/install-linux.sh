@@ -5,11 +5,12 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt update -y
 
 sudo apt install -y \
-	stow \
+	bat \
+	exa \
+	fd-find \
 	fish \
-	zoxide \
 	fzf \
 	ripgrep \
-	fd-find \
-	bat \
-	exa
+	stow \
+	zoxide \
+    nvim
