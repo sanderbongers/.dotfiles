@@ -11,6 +11,9 @@
 # Fish command history
 .local/share/fish/fish_history
 
+# Git
+.git
+
 # Node.js
 _cacache/
 node_modules/
