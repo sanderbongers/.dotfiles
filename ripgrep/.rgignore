@@ -6,9 +6,10 @@
 
 # Caches
 .cache/
-[Cc]ache?/
+cache/
+*Cache?/
 
-# Fish command history
+# Fish
 .local/share/fish/fish_history
 
 # Git
@@ -18,10 +19,10 @@
 _cacache/
 node_modules/
 
-# Sublime Text
-Code\ Cache/
-
 # Visual Studio Code
-/Library/Application\ Support/Code/User/History/
-/Library/Application\ Support/Code/User/logs/
-/Library/Application\ Support/Code/User/workspaceStorage
+Library/Application\ Support/Code/logs/
+Library/Application\ Support/Code/User/History/
+Library/Application\ Support/Code/User/workspaceStorage
+
+# zsh
+.zsh_history
