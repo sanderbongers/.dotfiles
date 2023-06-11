@@ -3,8 +3,6 @@ augroup color_overrides
 	autocmd ColorScheme * highlight Normal ctermbg=NONE
 augroup end
 
-" colorscheme codedark
-
 syntax on
 
 set ignorecase
