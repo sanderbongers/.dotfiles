@@ -28,6 +28,9 @@ node_modules/
 # Python
 __pycache__/
 
+# Vim
+.viminfo
+
 # Visual Studio Code
 .vscode
 Library/Application\ Support/Code/logs/
