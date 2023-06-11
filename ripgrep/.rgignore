@@ -1,8 +1,10 @@
 # macOS
+*~
 .DS_Store
 .Trash/
 /private/var/folders/
 /System/Volumes/Data/
+Library/Group\ Containers
 
 # Bash
 .bash_history
@@ -27,6 +29,7 @@ node_modules/
 __pycache__/
 
 # Visual Studio Code
+.vscode
 Library/Application\ Support/Code/logs/
 Library/Application\ Support/Code/User/History/
 Library/Application\ Support/Code/User/workspaceStorage
