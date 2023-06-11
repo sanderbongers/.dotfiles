@@ -4,6 +4,7 @@
 .Trash/
 /private/var/folders/
 /System/Volumes/Data/
+Library/Containers
 Library/Group\ Containers
 
 # Bash
