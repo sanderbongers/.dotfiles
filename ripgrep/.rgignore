@@ -4,10 +4,12 @@
 .Trash/
 /private/var/folders/
 /System/Volumes/Data/
-Library/Containers
-Library/Group\ Containers
-Library/Saved\ Application\ State
-Library/Trial
+Library/Containers/
+Library/Daemon\ Containers/
+Library/Group\ Containers/
+Library/Saved\ Application\ State/
+Library/Trial/
+Library/VoiceTrigger/
 
 # Bash
 .bash_history
@@ -41,7 +43,7 @@ __pycache__/
 .vscode
 Library/Application\ Support/Code/logs/
 Library/Application\ Support/Code/User/History/
-Library/Application\ Support/Code/User/workspaceStorage
+Library/Application\ Support/Code/User/workspaceStorage/
 
 # zsh
 .zsh_history
