@@ -1,12 +1,16 @@
-function ripgrep
+function ripgrep --description 'ripgrep with fzf as interface and fuzzy filter'
     set -f rg_prefix "rg --no-config --no-heading --line-number --no-column --color=always --hidden --smart-case"
 
+    # Drop any flags from the arguments
+    set -f argv (string match --invert -- '-*' $argv)
+
+    # Remov any previous temporary files
     command rm -f /tmp/rg-fzf-{r,f}
 
     : | FZF_DEFAULT_OPTS="" fzf \
         --ansi \
         --disabled \
-        --query $argv \
+        --query "$argv" \
         --height 100% \
         --reverse \
         --border none \
