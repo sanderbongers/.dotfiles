@@ -1,7 +1,7 @@
 # https://github.com/junegunn/fzf
 
 set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --bind 'ctrl-/:toggle-preview' --preview-window 'hidden,down,60%'"
-set -gx FZF_CTRL_R_OPTS "--header 'Copy: ⌃c' --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
+set -gx FZF_CTRL_R_OPTS "--header 'Copy: ⌃y' --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort' --bind 'ctrl-/:ignore'"
 set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}'"
 
 # Use ripgrep to find files
