@@ -5,6 +5,7 @@
 /System/Volumes/Data/
 
 # Caches
+.cache/
 [Cc]ache?/
 
 # Fish command history
