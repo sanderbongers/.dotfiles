@@ -12,7 +12,7 @@ end
 # Use fd to find directories
 set -l fd (command -s fd || command -s fdfind)
 if command -sq $fd
-    set -gx FZF_ALT_C_COMMAND "$fd --type directory"
+    set -gx FZF_ALT_C_COMMAND "$fd --ignore-file=$HOME/.rgignore --type directory"
 end
 
 # Use bat to colorize previews
