@@ -6,6 +6,8 @@
 /System/Volumes/Data/
 Library/Containers
 Library/Group\ Containers
+Library/Saved\ Application\ State
+Library/Trial
 
 # Bash
 .bash_history
