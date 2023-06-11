@@ -18,7 +18,7 @@ function ripgrep
         --prompt "ripgrep> " \
         --delimiter : \
         --preview "bat --style=default --color=always {1} --highlight-line {2}" \
-        --preview-window "down,60%,border-top,~3,+{2}+3/3" \
+        --preview-window "down,60%,~3,+{2}+3/3" \
         --color "hl:-1:underline,hl+:-1:underline:reverse" \
         --bind "enter:become(vim {1} +{2})"
 end
