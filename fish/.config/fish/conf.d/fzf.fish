@@ -1,6 +1,6 @@
 # https://github.com/junegunn/fzf
 
-set -gx FZF_DEFAULT_OPTS "--height 50% --reverse --border --multi --exact --preview-window hidden --bind 'ctrl-/:toggle-preview'"
+set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --bind 'ctrl-/:toggle-preview' --preview-window 'hidden,down,60%'"
 set -gx FZF_CTRL_R_OPTS "--header 'Copy: ⌃c' --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
 set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}'"
 
@@ -13,7 +13,7 @@ end
 # Use fd to find directories
 set -l fd (command -s fd || command -s fdfind)
 if command -sq $fd
-    set -gx FZF_ALT_C_COMMAND "$fd --ignore-file=$HOME/.rgignore --type directory"
+    set -gx FZF_ALT_C_COMMAND "$fd --ignore-file=$HOME/.rgignore --type directory --hidden"
 end
 
 # Use bat to colorize previews
