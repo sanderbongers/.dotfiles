@@ -5,8 +5,6 @@ augroup end
 
 syntax on
 
-set runtimepath+=/usr/local/opt/fzf
-
 set ignorecase
 set smartcase
 
