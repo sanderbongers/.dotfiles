@@ -15,6 +15,9 @@ cache/
 caches/
 *Cache*/
 
+# Composer
+.composer/vendor/
+
 # Fish
 .local/share/fish/fish_history
 
