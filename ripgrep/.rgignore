@@ -4,6 +4,9 @@
 /private/var/folders/
 /System/Volumes/Data/
 
+# Bash
+.bash_history
+
 # Caches
 .cache/
 cache/
