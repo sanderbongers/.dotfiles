@@ -5,6 +5,8 @@ augroup end
 
 syntax on
 
+set runtimepath+=/usr/local/opt/fzf
+
 set ignorecase
 set smartcase
 
@@ -26,8 +28,6 @@ set wildmenu
 set wildmode=longest:list,full
 
 set clipboard^=unnamed,unnamedplus
-
-set rtp+=/usr/local/opt/fzf
 
 set nobackup
 set nowritebackup
