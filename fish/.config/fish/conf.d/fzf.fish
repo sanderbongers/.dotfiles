@@ -5,7 +5,7 @@ set -gx FZF_ALT_C_OPTS "--preview 'exa -1 --level=1 --color=never {}'"
 
 # Use ripgrep to find files
 if command -sq rg
-    set -gx FZF_DEFAULT_COMMAND "rg --files \$dir 2>/dev/null | sed '1d; s#^\./##'"
+    set -gx FZF_DEFAULT_COMMAND "command rg --ignore-file=$HOME/.rgignore --files \$dir 2>/dev/null | sed '1d; s#^\./##'"
     set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 end
 
