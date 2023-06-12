@@ -1,4 +1,4 @@
-function fzf_cd_toggle --description Allows\ toggling\ hidden\ files\ in\ fzf\'s\ alt-c\ command\ by\ abusing\ the\ query\ string\ \{q\}\}
+function fzf_cd_toggle --description "Allows toggling hidden files in fzf's alt-c command by abusing the query string"
     set -f query_file /tmp/fzf-alt-c-query
     set -f toggle_file /tmp/fzf-alt-c-toggle
     set -f command_a "$FZF_ALT_C_COMMAND"
