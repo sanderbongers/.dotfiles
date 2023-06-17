@@ -5,5 +5,5 @@ function ll --wraps=exa
         return
     end
 
-    ls -lAh --color=auto $argv
+    ls -lah --color=auto $argv
 end
