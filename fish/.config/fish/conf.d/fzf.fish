@@ -17,6 +17,7 @@ if command -sq $fd
 end
 
 # Use bat to colorize previews
-if command -sq bat
+set -l bat (command -s bat || command -s batcat)
+if command -sq $bat
     set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --preview 'test -f {} && bat --color always --line-range :500 {} || exa -1 --level=1 --color=never {}' --bind 'focus:transform-preview-label(echo [ {} ])'"
 end
