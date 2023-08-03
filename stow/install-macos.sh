@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-if [[ $(uname -s) != "Darwin" ]]; then
+if [ "$(uname -s)" != "Darwin" ]; then
 	echo "Not on macOS, skipping..."
 	exit 1
 fi
 
 # Install Homebrew and packages
-command -v "brew" &>/dev/null || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
-brew bundle check || brew bundle install
+command -v "brew" >/dev/null; or curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+brew bundle check; brew bundle install
 
 # Add SSH key to keychain
 ssh_key_path="$HOME/.ssh/id_ed25519"
-[[ -f "$ssh_key_path" ]] && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
+test -f "$ssh_key_path"; and ssh-add "$ssh_key_path"
 
 # Set macOS user defaults
 chflags nohidden ~/Library                                                                  # Show the ~/Library folder
