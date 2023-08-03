@@ -14,7 +14,7 @@ simulate:
 	@stow --verbose --restow --target $(TARGET_DIR) --simulate */
 
 dump-bundle:
-	@brew bundle dump --no-restart --force
+	@brew bundle dump --file ~/.dotfiles/homebrew/.config/Brewfile --force
 
 clean:
 	@stow --verbose --target ~ --delete */
