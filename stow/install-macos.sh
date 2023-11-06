@@ -11,7 +11,7 @@ brew bundle check || or brew bundle install
 
 # Add SSH key to keychain
 ssh_key_path="$HOME/.ssh/id_ed25519"
-test -f "$ssh_key_path" && ssh-add "$ssh_key_path"
+test -f "$ssh_key_path" && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
 
 # Set macOS user defaults
 chflags nohidden ~/Library                                                                 # Show the ~/Library folder
