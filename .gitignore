@@ -1,2 +1,5 @@
+# Local git config
 .gitconfig.local
+
+# Local fish config
 config.local.fish
