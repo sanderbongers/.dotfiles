@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ "$(uname -s)" != "Linux" ]; then
+	echo "Not on Linux, skipping..."
+	exit 1
+fi
+
 sudo add-apt-repository ppa:git-core/ppa
 
 sudo apt update -y
