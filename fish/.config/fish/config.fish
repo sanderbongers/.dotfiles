@@ -28,6 +28,3 @@ if command -sq nvim
 else
     set -gx EDITOR vim
 end
-
-# Lazy load nvm
-test -d $HOME/.nvm; and load_nvm >/dev/stderr
