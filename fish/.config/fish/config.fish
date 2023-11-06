@@ -1,3 +1,9 @@
+# Fish configuration overrides
+set -U fish_greeting
+set -U fish_color_host cyan
+set -U __fish_git_prompt_show_informative_status true
+set -U __fish_git_prompt_showcolorhints true
+
 # Load local Fish configuration
 set -l local_config $__fish_config_dir/config.local.fish
 test -f $local_config; and source $local_config
