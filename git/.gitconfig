@@ -21,7 +21,7 @@
     l = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --date=relative
     ls = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --date=relative --stat
     p = push
-    pl = pull
+    pl = pull --no-rebase
     s = status -sb
     sh = show
 [commit]
