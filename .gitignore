@@ -3,3 +3,6 @@
 
 # Local fish config
 config.local.fish
+
+# Fish variables (system-specific and auto-generated)
+fish_variables
