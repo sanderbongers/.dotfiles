@@ -15,6 +15,7 @@ sudo apt install -y \
 	fd-find \
 	fish \
 	fzf \
+	keychain \
 	ripgrep \
 	stow \
 	zoxide \
