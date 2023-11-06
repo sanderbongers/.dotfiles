@@ -4,7 +4,7 @@ set -U fish_color_host cyan
 set -U __fish_git_prompt_show_informative_status true
 set -U __fish_git_prompt_showcolorhints true
 
-# Load local Fish configuration
+# Load local fish configuration
 set -l local_config $__fish_config_dir/config.local.fish
 test -f $local_config; and source $local_config
 
@@ -14,17 +14,17 @@ for dir in $path_dirs
     test -d $dir; and set -gx PATH $dir $PATH
 end
 
+# Default editor
+if command -sq nvim
+    set -gx EDITOR nvim
+else
+    set -gx EDITOR vim
+end
+
 # Add identities to ssh-agent
 switch (uname -s)
     case Linux
         which keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
     case Darwin
         /usr/bin/ssh-add --apple-load-keychain -q
-end
-
-# Default editor
-if command -sq nvim
-    set -gx EDITOR nvim
-else
-    set -gx EDITOR vim
 end
