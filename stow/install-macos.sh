@@ -6,8 +6,8 @@ if [ "$(uname -s)" != "Darwin" ]; then
 fi
 
 # Install Homebrew and packages
-command -v "brew" >/dev/null || or curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
-brew bundle check || or brew bundle install
+command -v "brew" >/dev/null || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+brew bundle check || brew bundle install
 
 # Store SSH key passphrase in keychain
 ssh_key_path="$HOME/.ssh/id_ed25519"
