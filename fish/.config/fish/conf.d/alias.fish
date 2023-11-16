@@ -13,4 +13,4 @@ for git_alias in (git config --get-regexp "^alias\." | string replace "alias." "
 end
 
 # Other
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="curl https://ipinfo.io/ip"
