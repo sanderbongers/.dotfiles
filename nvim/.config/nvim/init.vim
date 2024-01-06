@@ -10,6 +10,9 @@ set clipboard^=unnamed,unnamedplus
 " Block style cursor in all modes
 set guicursor=
 
+" Autoindent when starting a new line
+set smartindent
+
 " Complete first match and list all matches
 set wildmode=list:full
 
