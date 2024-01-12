@@ -7,7 +7,6 @@
 [core]
     longpaths = true
     autocrlf = input
-    excludesfile = ~/.gitignore
     pager = delta
 [init]
     defaultBranch = main
