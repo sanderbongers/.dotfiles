@@ -16,7 +16,7 @@ sudo apt install -y \
 	fish \
 	fzf \
 	keychain \
+	neovim \
 	ripgrep \
 	stow \
 	zoxide \
-    nvim
