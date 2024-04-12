@@ -6,3 +6,6 @@ config.local.fish
 
 # Fish variables (system-specific and auto-generated)
 fish_variables
+
+# Homebrew Bundle lock file
+homebrew/.config/homebrew/Brewfile.lock.json

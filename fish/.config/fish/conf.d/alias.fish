@@ -12,5 +12,8 @@ for git_alias in (git config --get-regexp "^alias\." | string replace "alias." "
     complete --command $alias --wraps git
 end
 
-# Other
-alias ip="curl https://ipinfo.io/ip"
+# Miscellaneous
+alias ip="curl https://ipinfo.io"
+
+# Abbrevations
+abbr --add bs brew services

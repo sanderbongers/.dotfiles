@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1091
 
 current_dir="$(dirname "$0")"
 
@@ -21,5 +22,5 @@ if [ "$shell_path" ] && [ "$shell_path" != "$SHELL" ]; then
 	fi
 
 	# Set as default shell
-	chsh --shell "$shell_path"
+	chsh -s "$shell_path"
 fi

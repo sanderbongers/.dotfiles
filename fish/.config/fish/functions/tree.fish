@@ -5,5 +5,8 @@ function tree --wraps=exa
         return
     end
 
-    command tree -a $argv
+    if command -sq tree
+        command tree -a $argv
+        return
+    end
 end
