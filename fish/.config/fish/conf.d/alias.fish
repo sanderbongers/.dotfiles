@@ -16,4 +16,5 @@ end
 alias ip="curl https://ipinfo.io"
 
 # Abbrevations
-abbr --add bs brew services
+abbr --add bs "brew services"
+abbr --add gem "brew gem"
