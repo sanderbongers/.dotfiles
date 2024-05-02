@@ -1,5 +1,7 @@
 # https://github.com/junegunn/fzf
 
+fish_add_path (brew --prefix)/opt/fzf/bin
+
 set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --preview-window down:60%:hidden --bind 'ctrl-/:toggle-preview+transform-preview-label(echo [ {} ])' --bind 'ctrl-z:ignore'"
 set -gx FZF_CTRL_R_OPTS "--header 'Copy: ⌃y' --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort' --bind 'ctrl-r:ignore,ctrl-/:ignore'"
 
