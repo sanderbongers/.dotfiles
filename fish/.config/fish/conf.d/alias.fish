@@ -13,7 +13,7 @@ for git_alias in (git config --get-regexp "^alias\." | string replace "alias." "
 end
 
 # Miscellaneous
-alias ip="curl https://ipinfo.io"
+alias ipinfo="curl https://ipinfo.io"
 
 # Abbrevations
 abbr --add bs "brew services"
