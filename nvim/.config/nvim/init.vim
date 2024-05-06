@@ -19,3 +19,6 @@ set wildmode=list:full
 " Enable mouse scrolling in iTerm2
 map <ScrollWheelDown> j
 map <ScrollWheelUp> k
+
+" Enable fzf in Vim
+set rtp+=/usr/local/opt/fzf
