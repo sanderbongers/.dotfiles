@@ -1,8 +1,9 @@
 # General commands
 alias cp="cp -iv"
-alias mv="mv -iv"
 alias rm="rm -Iv"
 alias mkdir="mkdir -pv"
+alias mv="mv -iv"
+alias stat="stat -x"
 
 # Git
 alias groot="cd (git rev-parse --show-toplevel)"
