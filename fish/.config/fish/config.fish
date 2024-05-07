@@ -12,7 +12,7 @@ test -f $local_config; and source $local_config
 set -l -a path_dirs $__fish_config_dir/conf.d/bin
 set -a path_dirs (brew --prefix)/bin
 set -a path_dirs $HOME/.local/bin
-set -a path_dirs "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+set -a path_dirs /usr/local/opt/ruby/bin
 for dir in $path_dirs
     test -d $dir; and fish_add_path $dir
 end
