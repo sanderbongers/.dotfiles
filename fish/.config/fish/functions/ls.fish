@@ -5,5 +5,5 @@ function ls --wraps=exa
         return
     end
 
-    command ls -a --color=auto $argv
+    command ls -A --color=auto $argv
 end
