@@ -19,7 +19,7 @@ for dir in $path_dirs
 end
 
 # Default editor
-if command -sq nvim
+if command -q nvim
     set -gx EDITOR nvim
 else
     set -gx EDITOR vim
@@ -28,7 +28,7 @@ end
 # Add identities to ssh-agent
 switch (uname -s)
     case Linux
-        command -sq keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
+        command -q keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
     case Darwin
         /usr/bin/ssh-add --apple-load-keychain -q
 end

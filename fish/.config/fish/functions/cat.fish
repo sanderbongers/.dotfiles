@@ -1,6 +1,6 @@
 function cat --wraps=bat
     # If installed, use bat as cat replacement
-    if command -sq bat
+    if command -q bat
         bat --paging=never $argv
         return
     end

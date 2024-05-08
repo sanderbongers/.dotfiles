@@ -1,6 +1,6 @@
 function sed --wraps=gsed
     # If installed, use gsed as sed replacement
-    if command -sq gsed
+    if command -q gsed
         gsed $argv
         return
     end

@@ -1,6 +1,6 @@
 function ll --wraps=exa
     # If installed, use exa as ls replacement
-    if command -sq exa
+    if command -q exa
         exa --long --all --classify --group --time-style=iso $argv
         return
     end

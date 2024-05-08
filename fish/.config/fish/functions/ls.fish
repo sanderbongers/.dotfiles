@@ -1,6 +1,6 @@
 function ls --wraps=exa
     # If installed, use exa as ls replacement
-    if command -sq exa
+    if command -q exa
         exa --all --group $argv
         return
     end

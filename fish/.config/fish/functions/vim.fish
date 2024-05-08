@@ -1,6 +1,6 @@
 function vim --wraps=nvim
     # If installed, use neovim as vim replacement
-    if command -sq nvim
+    if command -q nvim
         nvim $argv
         return
     end

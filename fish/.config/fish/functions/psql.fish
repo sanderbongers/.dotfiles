@@ -1,6 +1,6 @@
 function psql --wraps=pgcli
     # If installed, use pgcli as psql replacement
-    if command -sq pgcli
+    if command -q pgcli
         pgcli $argv
         return
     end
