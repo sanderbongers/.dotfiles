@@ -4,7 +4,7 @@ function help
         return
     end
 
-    if command -sq bat
+    if command -q bat and command -q $argv
         $argv --help | bat --language=help
         return
     end
