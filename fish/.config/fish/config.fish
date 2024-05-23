@@ -17,3 +17,10 @@ set -a path_dirs /usr/local/opt/ruby/bin
 for dir in $path_dirs
     test -d $dir; and fish_add_path $dir
 end
+
+# Prevent commands starting with a space from being written to history file
+function fish_preexec --on-event fish_preexec
+    if string match --regex --quiet "^ " $argv
+        set -x fish_private_mode 1
+    end
+end
