@@ -17,18 +17,3 @@ set -a path_dirs /usr/local/opt/ruby/bin
 for dir in $path_dirs
     test -d $dir; and fish_add_path $dir
 end
-
-# Default editor
-if command -q nvim
-    set -gx EDITOR nvim
-else
-    set -gx EDITOR vim
-end
-
-# Add identities to ssh-agent
-switch (uname -s)
-    case Linux
-        command -q keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
-    case Darwin
-        /usr/bin/ssh-add --apple-load-keychain -q
-end
