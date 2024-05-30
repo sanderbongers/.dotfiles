@@ -14,6 +14,7 @@ set -a path_dirs (brew --prefix)/bin
 set -a path_dirs $HOME/.local/bin
 set -a path_dirs /usr/local/opt/coreutils/libexec/gnubin
 set -a path_dirs /usr/local/opt/ruby/bin
+set -a path_dirs /usr/local/opt/whois/bin
 for dir in $path_dirs
     test -d $dir; and fish_add_path $dir
 end
