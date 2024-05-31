@@ -12,11 +12,12 @@ test -f $local_config; and source $local_config
 set -l -a path_dirs $__fish_config_dir/conf.d/bin
 set -a path_dirs (brew --prefix)/bin
 set -a path_dirs $HOME/.local/bin
+set -a path_dirs /usr/local/sbin
 set -a path_dirs /usr/local/opt/coreutils/libexec/gnubin
 set -a path_dirs /usr/local/opt/ruby/bin
 set -a path_dirs /usr/local/opt/whois/bin
 for dir in $path_dirs
-    test -d $dir; and fish_add_path $dir
+    test -d $dir; and fish_add_path --append $dir
 end
 
 # Prevent commands starting with a space from being written to history file
