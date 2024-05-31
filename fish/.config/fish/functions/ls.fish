@@ -1,7 +1,7 @@
-function ls --wraps=exa
-    # If installed, use exa as ls replacement
-    if command -q exa
-        exa --all --group $argv
+function ls --wraps=eza
+    # If installed, use eza as ls replacement
+    if command -q eza
+        eza --all --group $argv
         return
     end
 

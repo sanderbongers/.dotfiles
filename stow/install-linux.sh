@@ -11,7 +11,7 @@ sudo apt update -y
 
 sudo apt install -y \
 	bat \
-	exa \
+	eza \
 	fd-find \
 	fish \
 	fzf \

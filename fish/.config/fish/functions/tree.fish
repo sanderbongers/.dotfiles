@@ -1,7 +1,7 @@
-function tree --wraps=exa
-    # Use exa as replacement, if installed
-    if command -q exa
-        exa --tree --all --ignore-glob=.git $argv
+function tree --wraps=eza
+    # Use eza as replacement, if installed
+    if command -q eza
+        eza --tree --all --ignore-glob=.git $argv
         return
     end
 

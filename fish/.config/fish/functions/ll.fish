@@ -1,7 +1,7 @@
-function ll --wraps=exa
-    # If installed, use exa as ls replacement
-    if command -q exa
-        exa --long --all --classify --group --time-style=iso $argv
+function ll --wraps=eza
+    # If installed, use eza as ls replacement
+    if command -q eza
+        eza --long --all --classify --group --time-style=iso $argv
         return
     end
 
