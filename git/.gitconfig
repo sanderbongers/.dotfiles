@@ -43,3 +43,5 @@
     hunk-header-style = "omit"
 [include]
     path = ~/.gitconfig.local
+[tag]
+    sort = -version:refname
