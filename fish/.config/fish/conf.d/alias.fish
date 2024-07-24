@@ -17,6 +17,7 @@ alias myip="curl -s http://httpbin.org/ip | jq --raw-output '.[]'"
 
 # Abbrevations
 abbr --add bs "brew services"
+abbr --add bc "php bin/console"
 
 # Disable Forgit aliases
 set -x FORGIT_NO_ALIASES true
