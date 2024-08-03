@@ -1,6 +1,8 @@
 # https://github.com/junegunn/fzf
 
-fish_add_path (brew --prefix)/opt/fzf/bin
+if command -q brew
+    fish_add_path (brew --prefix)/opt/fzf/bin
+end
 
 # Set up Fish shell integration
 fzf --fish | source

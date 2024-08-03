@@ -1,4 +1,6 @@
 set -gx PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 
-pyenv init - | source
+if command -q pyenv
+    pyenv init - | source
+end
