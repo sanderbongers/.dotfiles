@@ -5,7 +5,7 @@ function help
     end
 
     if command -q bat and command -q $argv
-        $argv --help | bat --language=help
+        "$argv" --help | bat --language=help
         return
     end
 
