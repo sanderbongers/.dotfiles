@@ -13,6 +13,7 @@ set -l -a path_dirs $__fish_config_dir/conf.d/bin
 set -a path_dirs $HOME/.local/bin
 set -a path_dirs /usr/local/sbin
 set -a path_dirs /usr/local/opt/coreutils/libexec/gnubin
+set -a path_dirs /usr/local/opt/postgresql@16/bin
 set -a path_dirs /usr/local/opt/ruby/bin
 set -a path_dirs /usr/local/opt/whois/bin
 if command -q brew
