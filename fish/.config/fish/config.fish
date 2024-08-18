@@ -29,3 +29,10 @@ function fish_preexec --on-event fish_preexec
         set -x fish_private_mode 1
     end
 end
+
+# Install and/or enable iTerm2 shell integration
+set -l iterm2_shell_integration $HOME/.iterm2_shell_integration.fish
+if not test -e $iterm2_shell_integration
+    curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+end
+source $iterm2_shell_integration
