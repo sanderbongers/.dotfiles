@@ -14,6 +14,7 @@ end
 
 # Miscellaneous
 alias myip="curl -s http://httpbin.org/ip | jq --raw-output '.[]'"
+alias pte="open -a 'Plain Text Editor'"
 
 # Abbrevations
 abbr --add bs "brew services"
