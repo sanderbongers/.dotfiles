@@ -12,6 +12,7 @@
 [init]
     defaultBranch = main
 [alias]
+    a = add
     b = branch
     ba = branch -a
     cm = commit -m
