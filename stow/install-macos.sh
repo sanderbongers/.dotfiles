@@ -66,7 +66,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-defautls write com.apple.finder FXRemoveOldTrashItems -bool true
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 killall Dock
 killall Finder
 chflags nohidden ~/Library
