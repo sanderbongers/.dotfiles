@@ -50,17 +50,11 @@ defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.helpviewer HVIncludesKBSearches -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
-defaults write com.apple.Safari HomePage -string "about:blank"
-defaults write com.apple.Safari IncludeDebugMenu -boolean true
-defaults write com.apple.Safari IncludeDevelopMenu -boolean true
-defaults write com.apple.safari ShowFullURLInSmartSearchField -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
 defaults write com.apple.screencapture include-date -bool false
 defaults write com.apple.screencapture location "$HOME/Downloads"
 defaults write com.apple.screencapture show-thumbnail -bool false
 defaults write com.apple.TextEdit RichText -bool false
-defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
