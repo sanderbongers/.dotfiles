@@ -32,6 +32,16 @@ ssh_key_path="$HOME/.ssh/id_ed25519"
 test -f "$ssh_key_path" && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
 
 # Set macOS user defaults
+defaults -currentHost write -g com.apple.mouse.tapBehavior -bool true
+defaults write -g AppleKeyboardUIMode -int 3
+defaults write -g AppleShowAllExtensions -bool true
+defaults write -g com.apple.trackpad.scaling -float 1.5
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g KeyRepeat -int 2
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+defaults write -g PMPrintingExpandedStateForPrint2 -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.appleseed.FeedbackAssistant Autogather -bool false
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0.2
@@ -40,8 +50,11 @@ defaults write com.apple.dock magnification -bool false
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock size-immutable -bool true
 defaults write com.apple.dock tilesize -int 48
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 defaults write com.apple.finder NewWindowTargetPath "file://$HOME/Downloads"
 defaults write com.apple.finder QuitMenuItem -bool true
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
@@ -55,12 +68,7 @@ defaults write com.apple.screencapture include-date -bool false
 defaults write com.apple.screencapture location "$HOME/Downloads"
 defaults write com.apple.screencapture show-thumbnail -bool false
 defaults write com.apple.TextEdit RichText -bool false
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 killall Dock
 killall Finder
 chflags nohidden ~/Library
+sudo pmset -a displaysleep 60 ttyskeepawake 1
