@@ -20,3 +20,6 @@ sudo apt install -y \
 	ripgrep \
 	stow \
 	zoxide \
+
+# shellcheck disable=SC2035
+stow --target "$HOME" */
