@@ -2,15 +2,16 @@
 *~
 .DS_Store
 .Trash/
-/private/var/folders/
+/Library/Containers/
+/Library/Daemon\ Containers/
+/Library/Group\ Containers/
+/Library/Saved\ Application\ State/
+/Library/Trial/
+/Library/VoiceTrigger/
+/Library/WebKit/
+/private/var/
+/System/Library/Templates/
 /System/Volumes/Data/
-Library/Containers/
-Library/Daemon\ Containers/
-Library/Group\ Containers/
-Library/Saved\ Application\ State/
-Library/Trial/
-Library/VoiceTrigger/
-Library/WebKit/
 
 # Bash
 .bash_history
@@ -38,16 +39,18 @@ node_modules/
 __pycache__/
 
 # Time Machine backups
-Volumes/com.apple.TimeMachine.localsnapshots/
+/Volumes/.timemachine/
+/Volumes/Backups\ of\ Sander-MBP/
+/Volumes/com.apple.TimeMachine.localsnapshots/
 
 # Vim
 .viminfo
 
 # Visual Studio Code
 .vscode
-Library/Application\ Support/Code/logs/
-Library/Application\ Support/Code/User/History/
-Library/Application\ Support/Code/User/workspaceStorage/
+/Library/Application\ Support/Code/logs/
+/Library/Application\ Support/Code/User/History/
+/Library/Application\ Support/Code/User/workspaceStorage/
 
 # zsh
 .zsh_history
