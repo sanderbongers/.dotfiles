@@ -21,5 +21,8 @@ sudo apt install -y \
 	stow \
 	zoxide \
 
+# Symlink batcat to bat due to possible name clash with another package
+sudo ln -s /usr/bin/batcat /usr/bin/bat
+
 # shellcheck disable=SC2035
 stow --target "$HOME" */
