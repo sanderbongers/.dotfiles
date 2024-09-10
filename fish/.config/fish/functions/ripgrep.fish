@@ -2,7 +2,7 @@ function ripgrep --description 'ripgrep with fzf as interface and fuzzy filter'
 
     set -l rg_prefix "rg --no-config --no-heading --line-number --no-column --color=always --hidden --smart-case"
     if contains -- --no-ignore-vcs $argv
-        set rg_prefix "$rg_prefix --no-ignore-vcs"
+        set rg_prefix "$rg_prefix--no-ignore-vcs"
     end
 
     # Drop any flags from the arguments
