@@ -1,7 +1,7 @@
 function tree --wraps=eza
     # Use eza as replacement, if installed
     if command -q eza
-        eza --tree --all --ignore-glob=.git $argv
+        eza --all --ignore-glob=.git --tree --time-style=default $argv
         return
     end
 

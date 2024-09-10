@@ -33,6 +33,6 @@ end
 # Install and/or enable iTerm2 shell integration
 set -l iterm2_shell_integration $HOME/.iterm2_shell_integration.fish
 if not test -e $iterm2_shell_integration
-    curl -SsL https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash >/dev/null
+    curl -L https://iterm2.com/shell_integration/fish -o $iterm2_shell_integration
 end
 source $iterm2_shell_integration
