@@ -1,10 +1,13 @@
--- Transparent background
-vim.api.nvim_create_autocmd("ColorScheme", {
-    pattern = "*",
-    callback = function()
-        vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
-    end,
-})
+require("config.lazy")
+
+local vim = vim
+
+-- Remove background color to use theterminal's background
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--     callback = function()
+--         vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+--     end
+-- })
 
 -- Synchronize with system clipboard
 vim.opt.clipboard:append("unnamed,unnamedplus")
