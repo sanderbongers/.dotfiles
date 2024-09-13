@@ -5,9 +5,9 @@
 [github]
     user = sanderbongers
 [core]
-    longpaths = true
     autocrlf = input
     excludesfile = ~/.gitignore
+    longpaths = true
     pager = delta
 [init]
     defaultBranch = main
@@ -35,14 +35,17 @@
     date = relative
 [push]
     autoSetupRemote = true
+[tag]
+    sort = -version:refname
+[diff]
+    colorMoved = default
 [gpg]
     format = ssh
 [delta]
-    navigate = true
-    line-numbers = true
-    file-decoration-style = "blue box"
+    diff-so-fancy = true
+    file-decoration-style = "ol"
     hunk-header-style = "omit"
+    line-numbers = true
+    navigate = true
 [include]
     path = ~/.gitconfig.local
-[tag]
-    sort = -version:refname
