@@ -1505,13 +1505,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12342590838670731</real>
+				<real>0.070588235294117646</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.10080463439226151</real>
+				<real>0.054901960784313725</real>
 				<key>Red Component</key>
-				<real>0.097512803971767426</real>
+				<real>0.050980392156862744</real>
 			</dict>
 			<key>Background Color (Dark)</key>
 			<dict>
@@ -1712,13 +1712,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12156862745098039</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.098039215686274508</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.094117647058823528</real>
+				<real>0.0</real>
 			</dict>
 			<key>Cursor Text Color (Dark)</key>
 			<dict>
@@ -2544,6 +2544,8 @@ The script should do this: \(ai.prompt)</string>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.20250573611953882</real>
+	<key>StatusBarPosition</key>
+	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>SynchronizeQueryWithFindPasteboard</key>
@@ -2579,7 +2581,7 @@ The script should do this: \(ai.prompt)</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>2</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<true/>
 	<key>kCPKUseSystemColorPicker</key>
