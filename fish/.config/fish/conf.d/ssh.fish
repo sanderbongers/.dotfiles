@@ -1,5 +1,4 @@
 # Add identities to ssh-agent
-switch (uname -s)
-    case Linux
-        command -q keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
+if test "$os" = linux
+    command -q keychain; and keychain --eval --quiet --quick $HOME/.ssh/id_ed25519 | source
 end
