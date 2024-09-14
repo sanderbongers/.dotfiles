@@ -23,4 +23,7 @@ if [ "$shell_path" ] && [ "$shell_path" != "$SHELL" ]; then
 
 	# Set as default shell
 	chsh -s "$shell_path"
+
+	# Set fish theme to use ANSI colors set in iTerm2
+	fish_config theme save "fish default"
 fi
