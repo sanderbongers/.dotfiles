@@ -1,16 +1,3 @@
-[user]
-    name = Sander Bongers
-    email = sander@bonge.rs
-    signingkey = ~/.ssh/id_ed25519.pub
-[github]
-    user = sanderbongers
-[core]
-    autocrlf = input
-    excludesfile = ~/.gitignore
-    longpaths = true
-    pager = delta
-[init]
-    defaultBranch = main
 [alias]
     a = add
     b = branch
@@ -23,29 +10,42 @@
     ls = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --date=relative --stat
     p = push
     pl = pull --no-rebase
-    s = status -sb
+    s = status --ignore-submodules
     sh = show
 [commit]
     gpgsign = true
-[pull]
-    rebase = true
-[fetch]
-    prune = true
-[log]
-    date = relative
-[push]
-    autoSetupRemote = true
-[tag]
-    sort = -version:refname
-[diff]
-    colorMoved = default
-[gpg]
-    format = ssh
+[core]
+    autocrlf = input
+    excludesfile = ~/.gitignore
+    longpaths = true
+    pager = delta
 [delta]
     diff-so-fancy = true
     file-decoration-style = "ol"
     hunk-header-style = "omit"
     line-numbers = true
     navigate = true
+[diff]
+    colorMoved = default
+[fetch]
+    prune = true
+[github]
+    user = sanderbongers
+[gpg]
+    format = ssh
+[init]
+    defaultBranch = main
+[log]
+    date = relative
+[pull]
+    rebase = true
+[push]
+    autoSetupRemote = true
+[tag]
+    sort = -version:refname
+[user]
+    email = sander@bonge.rs
+    name = Sander Bongers
+    signingkey = ~/.ssh/id_ed25519.pub
 [include]
     path = ~/.gitconfig.local
