@@ -4,7 +4,7 @@ function fish_prompt
 
     set -l prompt_login ""
     if not set -q fish_prompt_show_host; or test "$fish_prompt_show_host" != false
-        set prompt_login (printf '%s%s@%s%s ' (set_color $fish_color_host_remote) "$USER" (prompt_hostname) (set_color normal))
+        set prompt_login (printf '%s%s@%s%s ' (set_color $fish_color_host_remote) (whoami) (prompt_hostname) (set_color normal))
     end
 
     echo -n -s $prompt_login (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (fish_vcs_prompt) (set_color normal) ' $ '
