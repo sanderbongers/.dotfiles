@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$(uname -s)" != "Linux" ]; then
+if [[ "$1" != "linux" ]]; then
 	echo "Not on Linux, skipping..."
 	exit 1
 fi

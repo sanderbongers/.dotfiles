@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-if [ "$(uname -s)" != "Darwin" ]; then
+if [[ "$1" != "darwin" ]]; then
 	echo "Not on macOS, skipping..."
 	exit 1
 fi
 
-brew_prefix=$(brew --prefix)
 
 # Install Homebrew and packages
 command -v "brew" >/dev/null || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 brewfile="$HOME/.dotfiles/homebrew/.config/homebrew/Brewfile"
+brew_prefix=$(brew --prefix)
 "$brew_prefix"/bin/brew bundle check --file "$brewfile" || "$brew_prefix"/bin/brew bundle install --file "$brewfile"
 
 # Delete default fish configuration

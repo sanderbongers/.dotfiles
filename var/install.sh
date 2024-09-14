@@ -2,14 +2,15 @@
 # shellcheck disable=SC1091
 
 current_dir="$(dirname "$0")"
+os=$(command uname -s | tr '[:upper:]' '[:lower:]')
 
 # Setup and install OS-specific packages
-case "$(uname -s)" in
-Linux)
-	. "$current_dir/install-linux.sh"
+case "$os" in
+linux)
+	. "$current_dir/install-linux.sh" "$os"
 	;;
-Darwin)
-	. "$current_dir/install-macos.sh"
+darwin)
+	. "$current_dir/install-macos.sh" "$os"
 	;;
 esac
 
