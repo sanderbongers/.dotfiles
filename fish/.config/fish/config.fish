@@ -1,4 +1,7 @@
 # Fish configuration
+set -U __fish_git_prompt_show_informative_status true
+set -U __fish_git_prompt_showcolorhints true
+set -U __fish_git_prompt_showstashstate true
 set -U fish_greeting
 set -U os (command uname -s | string lower)
 
