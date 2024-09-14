@@ -3,6 +3,7 @@ set -U __fish_git_prompt_show_informative_status true
 set -U __fish_git_prompt_showcolorhints true
 set -U fish_color_cwd white
 set -U fish_color_host_remote cyan
+set -U fish_color_status red
 set -U fish_greeting
 set -U os (command uname -s | string lower)
 
