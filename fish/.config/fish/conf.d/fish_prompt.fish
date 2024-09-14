@@ -1,7 +1,6 @@
 function fish_prompt
     set -q fish_color_cwd; or set -U fish_color_cwd white
     set -q fish_color_host_remote; or set -U fish_color_host_remote cyan
-    set -q fish_color_status; or set -U fish_color_status red
 
     set -l prompt_login ""
     if not set -q fish_prompt_show_host; or test "$fish_prompt_show_host" != false
@@ -12,6 +11,7 @@ function fish_prompt
 end
 
 function fish_right_prompt
+    set -q fish_color_status; or set -U fish_color_status red
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus
 
