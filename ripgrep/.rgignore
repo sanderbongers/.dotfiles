@@ -1,17 +1,18 @@
 # macOS
-*~
 .DS_Store
 .Trash/
+*~
 /Library/Containers/
-/Library/Daemon\ Containers/
-/Library/Group\ Containers/
-/Library/Saved\ Application\ State/
+/Library/Daemon Containers/
+/Library/Group Containers/
+/Library/Saved Application State/
 /Library/Trial/
 /Library/VoiceTrigger/
 /Library/WebKit/
 /private/var/
 /System/Library/Templates/
 /System/Volumes/Data/
+Library/Application Support/FileProvider/
 
 # Bash
 .bash_history
@@ -26,8 +27,8 @@ caches/
 .composer/vendor/
 
 # Cursor
-Library/Application Support/Cursor/logs
-Library/Application Support/Cursor/User/History
+Library/Application Support/Cursor/logs/
+Library/Application Support/Cursor/User/History/
 
 # Fish
 .local/share/fish/fish_history
@@ -47,7 +48,7 @@ Auto Save Session.sublime_session
 
 # Time Machine backups
 /Volumes/.timemachine/
-/Volumes/Backups\ of\ Sander-MBP/
+/Volumes/Backups of Sander-MBP/
 /Volumes/com.apple.TimeMachine.localsnapshots/
 
 # Vim
@@ -55,9 +56,9 @@ Auto Save Session.sublime_session
 
 # Visual Studio Code
 .vscode
-/Library/Application\ Support/Code/logs/
-/Library/Application\ Support/Code/User/History/
-/Library/Application\ Support/Code/User/workspaceStorage/
+/Library/Application Support/Code/logs/
+/Library/Application Support/Code/User/History/
+/Library/Application Support/Code/User/workspaceStorage/
 
 # zsh
 .zsh_history
