@@ -17,7 +17,10 @@ set -a path_dirs /usr/local/opt/postgresql@16/bin
 set -a path_dirs /usr/local/opt/ruby/bin
 set -a path_dirs /usr/local/opt/whois/bin
 if command -q brew
-    set -a path_dirs (brew --prefix)/bin
+    if not set -q brew_prefix
+        set -Ux brew_prefix (brew --prefix)
+    end
+    set -a path_dirs "$brew_prefix"/bin
 end
 for dir in $path_dirs
     test -d $dir; and fish_add_path --append $dir

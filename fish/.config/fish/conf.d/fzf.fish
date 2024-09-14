@@ -1,7 +1,7 @@
 # https://github.com/junegunn/fzf
 
 if command -q brew
-    fish_add_path (brew --prefix)/opt/fzf/bin
+    fish_add_path "$brew_prefix"/opt/fzf/bin
 end
 
 set -gx FZF_DEFAULT_OPTS "--height 100% --reverse --multi --exact --preview-window down:60%:hidden --bind 'ctrl-/:toggle-preview+transform-preview-label:echo [ {} ]' --bind 'ctrl-z:ignore'"
