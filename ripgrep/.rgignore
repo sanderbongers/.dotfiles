@@ -25,6 +25,10 @@ caches/
 # Composer
 .composer/vendor/
 
+# Cursor
+Library/Application Support/Cursor/logs
+Library/Application Support/Cursor/User/History
+
 # Fish
 .local/share/fish/fish_history
 
@@ -37,6 +41,9 @@ node_modules/
 
 # Python
 __pycache__/
+
+# Sublime Text
+Auto Save Session.sublime_session
 
 # Time Machine backups
 /Volumes/.timemachine/
