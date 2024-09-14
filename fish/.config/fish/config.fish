@@ -2,6 +2,7 @@
 set -U __fish_git_prompt_show_informative_status true
 set -U __fish_git_prompt_showcolorhints true
 set -U fish_color_host cyan
+set -U fish_color_host_remote cyan
 set -U fish_greeting
 
 # Load local fish configuration
@@ -34,8 +35,8 @@ function fish_preexec --on-event fish_preexec
 end
 
 # Install and/or enable iTerm2 shell integration
-set -l iterm2_shell_integration $HOME/.iterm2_shell_integration.fish
-if not test -e $iterm2_shell_integration
-    curl -L https://iterm2.com/shell_integration/fish -o $iterm2_shell_integration
-end
-source $iterm2_shell_integration
+# set -l iterm2_shell_integration $HOME/.iterm2_shell_integration.fish
+# if not test -e $iterm2_shell_integration
+#     curl -L https://iterm2.com/shell_integration/fish -o $iterm2_shell_integration
+# end
+# source $iterm2_shell_integration
