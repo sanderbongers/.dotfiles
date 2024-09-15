@@ -5,6 +5,7 @@
     cm = commit -m
     co = checkout
     cob = checkout -b
+    d = diff
     ds = diff --staged
     l = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --date=relative
     ls = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --date=relative --stat
