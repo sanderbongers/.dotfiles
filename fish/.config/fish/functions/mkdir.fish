@@ -1,3 +1,3 @@
 function mkdir --description 'alias mkdir=mkdir -pv'
- command mkdir -pv $argv
+    command mkdir -pv $argv
 end
