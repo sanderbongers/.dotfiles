@@ -1,4 +1,4 @@
-function mkcdir --wraps mkdir --description "Create and directly move into a directory"
+function mkcdir --wraps mkdir --description "Create a directory and directly move into it"
     command mkdir -pv $argv
     if test $status = 0
         while string match -- "-*" $argv[-1]
