@@ -3,7 +3,7 @@ function fish_prompt
     set -q fish_color_host_remote; or set -U fish_color_host_remote cyan
     set -q fish_color_status; or set -U fish_color_status red
 
-    if not set -q fish_prompt_show_host; or test $fish_prompt_show_host != false
+    if not set -q fish_prompt_show_host; or contains -- $fish_prompt_show_host yes true 1
         printf "%s" (set_color $fish_color_host_remote)
         printf "%s@%s" (whoami) (prompt_hostname)
         printf "%s " (set_color normal)
