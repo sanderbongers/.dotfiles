@@ -22,12 +22,12 @@
     stl = stash list
     stp = stash push
     stpp = stash pop
-[color "blame"]
-	highlightRecent = 240 237, 2 years ago, 243 236, 1 year ago, 246 235, 6 months ago, 249 234, 1 month ago, 252 233, 1 week ago, 255 232
 [blame]
 	coloring = highlightRecent
 [commit]
     gpgsign = true
+[color "blame"]
+	highlightRecent = 240 237, 2 years ago, 243 236, 1 year ago, 246 235, 6 months ago, 249 234, 1 month ago, 252 233, 1 week ago, 255 232
 [core]
     autocrlf = input
     excludesfile = ~/.gitignore
