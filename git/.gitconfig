@@ -11,8 +11,8 @@
     cp = cherry-pick
     d = diff
     ds = diff --staged
-    l = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit
-    ls = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr %C(blue)%an%Creset' --color=always --abbrev-commit --stat
+    l = log --graph --pretty=format:'%C(auto)%h%d %s %C(dim)%an (%cr)%Creset%n'
+    ls = log --graph --pretty=format:'%C(auto)%h%d %s %C(dim)%an (%cr)%Creset%n' --stat
     p = push
     pl = pull --no-rebase
     rh = reset HEAD
