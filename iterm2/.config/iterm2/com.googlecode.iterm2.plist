@@ -11,9 +11,9 @@ The script should do this: \(ai.prompt)</string>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
 	<key>AiMaxTokens</key>
-	<integer>8192</integer>
+	<integer>128000</integer>
 	<key>AiModel</key>
-	<string>gpt-4</string>
+	<string>gpt-4o</string>
 	<key>AitermURL</key>
 	<string>https://api.openai.com/v2/completions</string>
 	<key>AllowClipboardAccess</key>
@@ -780,6 +780,8 @@ The script should do this: \(ai.prompt)</string>
 	<false/>
 	<key>ForceKeyboard</key>
 	<false/>
+	<key>FunctionKey</key>
+	<integer>10</integer>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -975,8 +977,12 @@ The script should do this: \(ai.prompt)</string>
 	<integer>4</integer>
 	<key>JobName</key>
 	<false/>
+	<key>LeftCommand</key>
+	<integer>7</integer>
 	<key>LeftControl</key>
 	<integer>11</integer>
+	<key>LeftOption</key>
+	<integer>2</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1499,19 +1505,19 @@ The script should do this: \(ai.prompt)</string>
 			<key>Automatically Log</key>
 			<false/>
 			<key>BM Growl</key>
-			<false/>
+			<true/>
 			<key>Background Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.070588235294117646</real>
+				<real>0.070588238537311554</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.054901960784313725</real>
+				<real>0.054901961237192154</real>
 				<key>Red Component</key>
-				<real>0.050980392156862744</real>
+				<real>0.050980392843484879</real>
 			</dict>
 			<key>Background Color (Dark)</key>
 			<dict>
@@ -2301,6 +2307,8 @@ The script should do this: \(ai.prompt)</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Send Terminal Generated Alerts</key>
+			<false/>
 			<key>Set Local Environment Vars</key>
 			<integer>1</integer>
 			<key>Shortcut</key>
@@ -2526,6 +2534,12 @@ The script should do this: \(ai.prompt)</string>
 	<false/>
 	<key>ReportHorizontalScrollEvents</key>
 	<true/>
+	<key>RightCommand</key>
+	<integer>8</integer>
+	<key>RightControl</key>
+	<integer>12</integer>
+	<key>RightOption</key>
+	<integer>3</integer>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
