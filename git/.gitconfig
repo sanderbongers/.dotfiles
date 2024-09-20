@@ -16,6 +16,7 @@
     p = push
     pl = pull --no-rebase
     rh = reset HEAD
+    rs = restore --staged
     s = status --ignore-submodules
     sh = show
     st = stash
