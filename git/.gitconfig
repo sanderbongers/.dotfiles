@@ -34,6 +34,8 @@
     excludesfile = ~/.gitignore
     longpaths = true
     pager = delta
+[credential]
+	helper = osxkeychain
 [delta]
     diff-so-fancy = true
     file-decoration-style = "ol"
