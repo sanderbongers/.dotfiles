@@ -83,13 +83,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.57254904508590698</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.90980392694473267</real>
+				<real>0.66274511814117432</real>
 				<key>Red Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.31372550129890442</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
@@ -161,13 +161,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.57254904508590698</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.90980392694473267</real>
+				<real>0.66274511814117432</real>
 				<key>Red Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.31372550129890442</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
@@ -1417,13 +1417,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.57254904508590698</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.90980392694473267</real>
+				<real>0.66274511814117432</real>
 				<key>Red Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.31372550129890442</real>
 			</dict>
 			<key>Ansi 10 Color (Dark)</key>
 			<dict>
@@ -1603,13 +1603,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.57254904508590698</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.90980392694473267</real>
+				<real>0.66274511814117432</real>
 				<key>Red Component</key>
-				<real>0.40784314274787903</real>
+				<real>0.31372550129890442</real>
 			</dict>
 			<key>Ansi 2 Color (Dark)</key>
 			<dict>
