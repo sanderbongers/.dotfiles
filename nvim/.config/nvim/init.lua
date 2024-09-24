@@ -13,6 +13,9 @@ o.guicursor = ""
 -- Case insensitive search
 o.ignorecase = true
 
+-- Enable mouse support in all modes
+o.mouse = a
+
 -- Autoindent when starting a new line
 o.smartindent = true
 
