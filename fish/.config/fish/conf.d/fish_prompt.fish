@@ -1,5 +1,5 @@
 function fish_prompt
-    set -q fish_color_cwd; or set -U fish_color_cwd white
+    set -q fish_color_cwd; or set -U fish_color_cwd normal
     set -q fish_color_host_remote; or set -U fish_color_host_remote cyan
     set -q fish_color_status; or set -U fish_color_status red
     set -l prompt_symbol '$'
