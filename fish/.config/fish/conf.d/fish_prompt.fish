@@ -5,15 +5,15 @@ function fish_prompt
     set -l prompt_symbol '$'
 
     if not set -q fish_prompt_show_host; or contains -- $fish_prompt_show_host yes true 1
-        printf "%s" (set_color $fish_color_host_remote)
+        set_color $fish_color_host_remote
         printf "%s@%s" (whoami) (prompt_hostname)
-        printf "%s " (set_color normal)
+        set_color normal
     end
 
-    printf "%s" (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
-
+    set_color $fish_color_cwd
+    printf "%s" (prompt_pwd)
+    set_color normal
     printf "%s" (fish_git_prompt " %s")
-
     printf " $prompt_symbol "
 end
 
