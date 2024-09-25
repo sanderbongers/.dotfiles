@@ -1,7 +1,7 @@
 function ll --wraps=eza
     # If installed, use eza as ls replacement
     if command -q eza
-        eza --all --classify --group --long $argv
+        eza --all --classify --group --long --octal-permissions $argv
         return
     end
 
