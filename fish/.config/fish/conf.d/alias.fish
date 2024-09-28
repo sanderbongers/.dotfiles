@@ -1,8 +1,7 @@
 # Turn gitconfig aliases into Fish aliases
 for git_alias in (git config --get-regexp "^alias\." | string replace "alias." "g")
     echo $git_alias | read --delimiter " " --local alias --local command
-    alias $alias="git $command"
-    complete --command $alias --wraps git
+    abbr --add $alias "git $command"
 end
 
 # Abbrevations

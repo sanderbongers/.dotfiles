@@ -11,13 +11,13 @@
     cp = cherry-pick
     d = diff
     ds = diff --staged
-    l = log --graph --pretty=tformat:'%C(yellow)%h%C(reset)%x09 %C(cyan)%aD%C(reset) %C(blue)%xE2%x89%x88 %ar%C(reset) %C(auto)%d%C(reset)%n %x09%x09 %s  %C(dim)%aN <%aE>%C(reset)%n'
+    l = log --graph --pretty=tformat:'%C(yellow)%h%C(reset)%x09 %C(cyan)%aD%C(reset) %C(blue)%xE2%x89%x88 %ar%C(reset) %C(auto)%d%C(reset)%n %x09%x09 %s%n %x09%x09 %C(dim)%aN <%aE>%C(reset)%n'
     m = merge
     p = push
-    pl = pull --no-rebase
+    pl = pull
     rh = reset HEAD
     rs = restore --staged
-    s = status --ignore-submodules
+    s = status
     sh = show
     st = stash
     stl = stash list
