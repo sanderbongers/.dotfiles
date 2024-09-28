@@ -27,10 +27,6 @@ if [ ! -d "$HOME/.config/nvim/pack/github/start" ]; then
 	git clone https://github.com/github/copilot.vim.git ~/.config/nvim/pack/github/start/copilot.vim
 fi
 
-# Store SSH key passphrase in keychain
-ssh_key_path="$HOME/.ssh/id_ed25519"
-test -f "$ssh_key_path" && /usr/bin/ssh-add --apple-use-keychain "$ssh_key_path"
-
 # Set macOS user defaults
 defaults -currentHost write -g com.apple.mouse.tapBehavior -bool true
 defaults write -g AppleKeyboardUIMode -int 3
