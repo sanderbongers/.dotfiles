@@ -65,7 +65,7 @@ function nvm --description "Node version manager"
             end
 
             if test ! -e $nvm_data/$ver
-                set --local os $os
+                set --local os (command uname -s | string lower)
                 set --local ext tar.gz
                 set --local arch (command uname -m)
 
