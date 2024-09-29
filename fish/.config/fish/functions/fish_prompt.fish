@@ -20,6 +20,6 @@ function fish_prompt
     set_color $fish_color_cwd
     printf "%s " (prompt_pwd)
     set_color normal
-    printf "%s " (fish_git_prompt "%s")
+    printf "%s" (fish_git_prompt "%s ")
     printf "$prompt_symbol "
 end
