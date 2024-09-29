@@ -1,4 +1,4 @@
-function ls --wraps=eza
+function ls --wraps=eza --description "List contents of directory"
     # If installed, use eza as ls replacement
     if command -q eza
         eza --all $argv
