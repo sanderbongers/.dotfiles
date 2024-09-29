@@ -9,7 +9,6 @@ function fish_prompt
     set -g __fish_git_prompt_showcolorhints true
     set -g __fish_git_prompt_showstashstate true
     set -g __fish_git_prompt_showuntrackedfiles true
-    set -l git_symbol "\ue725"
     set -l prompt_symbol '$'
 
     if not set -q fish_prompt_show_host; or not contains -- $fish_prompt_show_host no false 0
@@ -19,8 +18,8 @@ function fish_prompt
     end
 
     set_color $fish_color_cwd
-    printf "%s" (prompt_pwd)
+    printf "%s " (prompt_pwd)
     set_color normal
-    printf "%s" (fish_git_prompt " $git_symbol%s")
-    printf " $prompt_symbol "
+    printf "%s " (fish_git_prompt "%s")
+    printf "$prompt_symbol "
 end
