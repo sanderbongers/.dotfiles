@@ -1,9 +1,5 @@
 # Fish configuration
-set -U __fish_git_prompt_show_informative_status true
-set -U __fish_git_prompt_showcolorhints true
-set -U __fish_git_prompt_showstashstate true
-set -U fish_greeting
-set -U os (command uname -s | string lower)
+set -U fish_greeting ""
 
 # Local fish configuration overrides
 set -l local_config $__fish_config_dir/config.local.fish
@@ -16,9 +12,7 @@ set -a path_dirs /usr/local/sbin
 set -a path_dirs /usr/local/opt/coreutils/libexec/gnubin
 set -a path_dirs /usr/local/opt/postgresql@16/bin
 set -a path_dirs /usr/local/opt/ruby/bin
-if command -q brew
-    set -a path_dirs (brew --prefix)/bin
-end
+command -q brew; and set -a path_dirs (brew --prefix)/bin
 for dir in $path_dirs
     fish_add_path $dir
 end
