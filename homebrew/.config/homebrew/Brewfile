@@ -27,8 +27,8 @@ brew "php", restart_service: true
 brew "composer"
 brew "coreutils"
 brew "diceware"
-brew "dnsmasq"
-brew "docker"
+brew "dnsmasq", restart_service: true
+brew "docker", link: false
 brew "docker-compose"
 brew "duf"
 brew "dust"
@@ -134,7 +134,6 @@ cask "tableplus"
 cask "telegram"
 cask "todoist"
 cask "visual-studio-code"
-vscode "farosystemappender constructor"
 vscode "alefragnani.project-manager"
 vscode "anysphere.pyright"
 vscode "bmalehorn.vscode-fish"
