@@ -2895,7 +2895,7 @@ The script should do this: \(ai.prompt)</string>
 			<key>Title Components</key>
 			<integer>6</integer>
 			<key>Transparency</key>
-			<real>0.040000000000000001</real>
+			<real>0.050000000000000003</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
