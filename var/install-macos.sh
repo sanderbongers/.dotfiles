@@ -39,7 +39,7 @@ defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
 defaults write -g PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.appleseed.FeedbackAssistant Autogather -bool false
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock autohide-delay -float 0.2
 defaults write com.apple.dock autohide-time-modifier -float 0.33
 defaults write com.apple.dock magnification -bool false
