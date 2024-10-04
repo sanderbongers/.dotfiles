@@ -7,5 +7,8 @@ config.local.fish
 # Fish variables (system-specific and auto-generated)
 fish_variables
 
-# Homebrew Bundle lock file
+# Homebrew Bundle lockfile
 homebrew/.config/homebrew/Brewfile.lock.json
+
+# Lazy.nvim lockfile
+nvim/.config/nvim/lazy-lock.json
