@@ -69,5 +69,5 @@ killall Finder
 chflags nohidden ~/Library
 sudo pmset -a displaysleep 60 ttyskeepawake 1
 
-# Remap Right Option to (broken) Left Control key
+# Temporarily remap Right Option to (broken) Left Control key (undo with `hidutil property --set '{"UserKeyMapping":[]}'`)
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x7000000E6,"HIDKeyboardModifierMappingDst":0x7000000E0}]}'
