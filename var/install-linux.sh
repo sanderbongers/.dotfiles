@@ -8,15 +8,19 @@ fi
 sudo apt update -y
 sudo apt install -y \
 	bat \
-	eza \
 	fd-find \
 	fish \
 	fzf \
 	keychain \
-	neovim \
 	ripgrep \
 	stow \
 	zoxide
+
+# In Debian, fd is called fdfind, so create a symbolic link
+ln -s "$(which fdfind)" ~/.local/bin/fd
+
+# Install latest version of Neovim through Snap
+sudo snap install nvim --classic
 
 # Install eza
 sudo mkdir -p /etc/apt/keyrings
