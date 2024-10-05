@@ -16,11 +16,17 @@ sudo apt install -y \
 	stow \
 	zoxide
 
-# In Debian, fd is called fdfind, so create a symbolic link
-ln -s "$(which fdfind)" ~/.local/bin/fd
-
 # Install latest version of Neovim through Snap
 sudo snap install nvim --classic
+
+# Delete default fish configuration
+[ -d "$HOME/.config/fish" ] && rm -rf "$HOME/.config/fish"
+
+# shellcheck disable=SC2035
+stow --target "$HOME" */
+
+# Add binary directories to $PATH
+fish -c "fish_add_path /snap/bin /usr/lib/cargo/bin"
 
 # Install eza
 sudo mkdir -p /etc/apt/keyrings
@@ -29,6 +35,3 @@ echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable
 sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
 sudo apt update
 sudo apt install -y eza
-
-# shellcheck disable=SC2035
-stow --target "$HOME" */
