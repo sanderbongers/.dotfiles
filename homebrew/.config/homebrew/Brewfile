@@ -65,6 +65,7 @@ brew "jq"
 brew "less"
 brew "libfido2"
 brew "libyaml"
+brew "luajit"
 brew "luarocks"
 brew "mailhog", restart_service: true
 brew "mycli"
