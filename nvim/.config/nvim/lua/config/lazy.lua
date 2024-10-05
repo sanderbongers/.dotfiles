@@ -15,14 +15,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("config.options")
+require("config.autocmds")
+require("config.keymaps")
 
 require("lazy").setup({
     spec = {
         { import = "plugins" },
     },
-    -- Configure any other settings here. See the documentation for more details.
-    -- colorscheme that will be used when installing plugins.
-    -- install = { colorscheme = { "habamax" } },
-    -- automatically check for plugin updates
-    checker = { enabled = true },
+    -- Colorscheme that will be used when installing plugins.
+    install = { colorscheme = { "tokyonight", "habamax" } },
+    -- Automatically check for plugin updates
+    checker = { enabled = true, notify = false, frequency = 60 * 60 * 24 },
 })
