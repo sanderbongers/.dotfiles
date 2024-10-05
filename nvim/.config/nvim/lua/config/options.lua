@@ -1,8 +1,9 @@
+-- Setup <Leader> and <LocalLeader> keys
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = ","
 
 -- Synchronize with system clipboard
-vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamed,unnamedplus"
+vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 
 -- Highlight current line
 vim.opt.cursorline = true
@@ -33,6 +34,3 @@ vim.opt.title = true
 
 -- Complete first match and list all matches
 vim.opt.wildmode = "list:full"
-
--- Enable fzf in Vim
-vim.opt.rtp:append("/usr/local/opt/fzf")
