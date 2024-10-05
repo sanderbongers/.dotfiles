@@ -16,6 +16,11 @@ sudo apt install -y \
 	stow \
 	zoxide
 
+# Install Node.js
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install -y nodejs
+
 # Install latest version of Neovim through Snap
 sudo snap install nvim --classic
 
