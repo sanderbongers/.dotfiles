@@ -1,0 +1,3 @@
+[*.lua]
+align_continuous_assign_statement = false
+align_continuous_inline_comment = false
