@@ -22,11 +22,6 @@ require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup("plugins", {
-    checker = {
-        enabled = true,
-        notify = false,
-        frequency = 60 * 60 * 24
-    },
     performance = {
         rtp = { paths = { "/usr/local/opt/fzf" } }
     }
