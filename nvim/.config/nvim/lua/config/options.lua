@@ -1,6 +1,6 @@
 -- Setup <Leader> and <LocalLeader> keys
 vim.g.mapleader = " "
-vim.g.maplocalleader = ","
+vim.g.maplocalleader = " "
 
 -- Synchronize with system clipboard
 vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
