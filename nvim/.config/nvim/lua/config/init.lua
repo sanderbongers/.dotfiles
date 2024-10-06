@@ -33,7 +33,7 @@ require("lazy").setup("plugins", {
             end,
             ["<M-u>"] = function()
                 vim.cmd("normal! <C-u>")
-            end,
-        },
-    },
+            end
+        }
+    }
 })
