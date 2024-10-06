@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     if vim.v.shell_error ~= 0 then
         vim.api.nvim_echo({
             { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-            { out,                            "WarningMsg" },
+            { out, "WarningMsg" },
             { "\nPress any key to exit..." },
         }, true, {})
         vim.fn.getchar()
@@ -22,7 +22,19 @@ require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup("plugins", {
+    install = { colorscheme = {} },
     performance = {
         rtp = { paths = { "/usr/local/opt/fzf" } }
-    }
+    },
+    ui = {
+        custom_keys = {
+            -- Temporarily alter the key binding for scrolling up/down to ⌥ instead of broken ⌃
+            ["<M-d>"] = function()
+                vim.cmd("normal! <C-d>")
+            end,
+            ["<M-u>"] = function()
+                vim.cmd("normal! <C-u>")
+            end,
+        },
+    },
 })
