@@ -1,4 +1,4 @@
 --map-syntax=".gitignore:Git Ignore"
 --map-syntax=".rgignore:Git Ignore"
 --style="plain"
---theme="base16"
+--theme="Catppuccin Mocha"
