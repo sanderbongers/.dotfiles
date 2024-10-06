@@ -13,6 +13,7 @@ vim.opt.guicursor = ""
 
 -- Case insensitive search
 vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Print line numbers
 vim.opt.number = true
