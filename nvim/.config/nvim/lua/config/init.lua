@@ -15,13 +15,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("config.autocmds")
 require("config.options")
+require("config.autocmds")
 require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup("plugins", {
-    install = { colorscheme = {} },
+    install = { colorscheme = { "tokyonight" } },
     performance = {
         rtp = { paths = { "/usr/local/opt/fzf" } }
     },
