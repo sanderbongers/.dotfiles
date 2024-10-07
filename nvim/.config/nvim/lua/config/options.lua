@@ -21,8 +21,8 @@ vim.opt.number = true
 -- Print line numbers relative to the current line
 vim.opt.relativenumber = true
 
--- Autoindent when starting a new line
--- vim.opt.smartindent = true
+-- Do smart autoindenting when starting a new line
+vim.opt.smartindent = true
 
 -- Splitting a window will put the new window below the current one
 vim.opt.splitbelow = true
