@@ -11,7 +11,7 @@ vim.opt.cursorline = true
 -- Block style cursor in all modes
 vim.opt.guicursor = ""
 
--- Case insensitive search, unless explicit case is used
+-- Case insensitive search, unless uppercase is used deliberately
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
@@ -20,9 +20,6 @@ vim.opt.number = true
 
 -- Print line numbers relative to the current line
 vim.opt.relativenumber = true
-
--- Do smart autoindenting when starting a new line
-vim.opt.smartindent = true
 
 -- Splitting a window will put the new window below the current one
 vim.opt.splitbelow = true
