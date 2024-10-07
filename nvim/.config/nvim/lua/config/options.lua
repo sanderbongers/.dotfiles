@@ -11,7 +11,7 @@ vim.opt.cursorline = true
 -- Block style cursor in all modes
 vim.opt.guicursor = ""
 
--- Case insensitive search
+-- Case insensitive search, unless explicit case is used
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
@@ -22,7 +22,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Autoindent when starting a new line
-vim.opt.smartindent = true
+-- vim.opt.smartindent = true
 
 -- Splitting a window will put the new window below the current one
 vim.opt.splitbelow = true
@@ -30,8 +30,12 @@ vim.opt.splitbelow = true
 -- Splitting a window will put the new window right of the current one
 vim.opt.splitright = true
 
+-- Decrease the time to wait for a mapped sequence to complete
+vim.opt.timeoutlen = 500
+
 -- Show filename in window title
 vim.opt.title = true
 
 -- Complete first match and list all matches
+vim.opt.wildignorecase = true
 vim.opt.wildmode = "list:full"
