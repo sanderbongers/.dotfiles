@@ -15,10 +15,10 @@ return {
             end,
             on_highlights = function(hl, c)
                 hl.CursorLine = {
-                    bg = "#21232d"
+                    bg = "#21232d",
                 }
-            end
+            end,
         })
         vim.cmd("colorscheme tokyonight")
-    end
+    end,
 }
