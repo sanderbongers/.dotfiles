@@ -1,8 +1,10 @@
 return {
     "hrsh7th/nvim-cmp",
-    lazy = true,
-    event = { "InsertEnter" },
     dependencies = {
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "onsails/lspkind.nvim",
         {
             "zbirenbaum/copilot-cmp",
             dependencies = "copilot.lua",
@@ -12,39 +14,68 @@ return {
         }
     },
     opts = function(_, opts)
-        local has_words_before = function()
-            unpack = unpack or table.unpack
-            local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-            return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-        end
-
         local cmp = require("cmp")
         cmp.setup {
-            sources = {
-                { name = "copilot" }
+            formatting = {
+                format = require("lspkind").cmp_format({
+                    symbol_map = { Copilot = "" }
+                })
             },
             mapping = {
                 ["<CR>"] = cmp.mapping({
                     i = function(fallback)
                         if cmp.visible() and cmp.get_active_entry() then
-                            cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
+                            cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace })
                         else
                             fallback()
                         end
                     end,
                     s = cmp.mapping.confirm({ select = true }),
-                    c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
+                    c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
                 }),
                 ["<Tab>"] = function(fallback)
-                    if not cmp.select_next_item() then
-                        if vim.bo.buftype ~= "prompt" and has_words_before() then
-                            cmp.complete()
-                        else
-                            fallback()
-                        end
+                    if cmp.visible() then
+                        cmp.select_next_item()
+                    else
+                        fallback()
                     end
                 end,
-            }
+                ["<S-Tab>"] = function(fallback)
+                    if cmp.visible() then
+                        cmp.select_prev_item()
+                    else
+                        fallback()
+                    end
+                end
+            },
+            sources = {
+                { name = "buffer" },
+                { name = "path" },
+                { name = "copilot" }
+            },
+            view = {
+                entries = { name = "custom", selection_order = "near_cursor" }
+            },
+            window = {
+                completion = cmp.config.window.bordered(),
+                documentation = cmp.config.window.bordered()
+            },
         }
+
+        cmp.setup.cmdline('/', {
+            mapping = cmp.mapping.preset.cmdline(),
+            sources = {
+                { name = 'buffer' }
+            }
+        })
+
+        cmp.setup.cmdline(':', {
+            mapping = cmp.mapping.preset.cmdline(),
+            sources = cmp.config.sources({
+                { name = 'path' }
+            }, {
+                { name = 'cmdline' }
+            })
+        })
     end
 }
