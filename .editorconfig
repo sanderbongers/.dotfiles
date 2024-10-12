@@ -7,3 +7,4 @@ align_continuous_inline_comment = false
 align_continuous_rect_table_field = false
 align_if_branch = false
 quote_style = double
+trailing_table_separator = smart
