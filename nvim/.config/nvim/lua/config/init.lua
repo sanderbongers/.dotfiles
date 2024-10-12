@@ -23,7 +23,7 @@ require("config.keymaps")
 require("lazy").setup("plugins", {
     install = { colorscheme = { "tokyonight" } },
     performance = {
-        rtp = { paths = { "/usr/local/opt/fzf" } }
+        rtp = { paths = { "/usr/local/opt/fzf" } },
     },
     ui = {
         custom_keys = {
@@ -33,7 +33,7 @@ require("lazy").setup("plugins", {
             end,
             ["<M-u>"] = function()
                 vim.cmd("normal! <C-u>")
-            end
-        }
-    }
+            end,
+        },
+    },
 })
