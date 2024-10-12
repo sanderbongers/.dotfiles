@@ -11,8 +11,8 @@ return {
             dependencies = "copilot.lua",
             config = function()
                 require("copilot_cmp").setup()
-            end
-        }
+            end,
+        },
     },
     opts = function(_, opts)
         local luasnip = require("luasnip")
@@ -20,8 +20,8 @@ return {
         cmp.setup {
             formatting = {
                 format = require("lspkind").cmp_format({
-                    symbol_map = { Copilot = "" }
-                })
+                    symbol_map = { Copilot = "" },
+                }),
             },
             mapping = {
                 ["<CR>"] = cmp.mapping(function(fallback)
@@ -65,31 +65,31 @@ return {
                 { name = "buffer" },
                 { name = "path" },
                 { name = "copilot" },
-                { name = "luasnip" }
+                { name = "luasnip" },
             },
             view = {
-                entries = { name = "custom", selection_order = "near_cursor" }
+                entries = { name = "custom", selection_order = "near_cursor" },
             },
             window = {
                 completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered()
+                documentation = cmp.config.window.bordered(),
             },
         }
 
         cmp.setup.cmdline("/", {
             mapping = cmp.mapping.preset.cmdline(),
             sources = {
-                { name = "buffer" }
-            }
+                { name = "buffer" },
+            },
         })
 
         cmp.setup.cmdline(":", {
             mapping = cmp.mapping.preset.cmdline(),
             sources = cmp.config.sources({
-                { name = "path" }
+                { name = "path" },
             }, {
-                { name = "cmdline" }
-            })
+                { name = "cmdline" },
+            }),
         })
-    end
+    end,
 }
