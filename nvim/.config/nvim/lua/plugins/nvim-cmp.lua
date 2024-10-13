@@ -8,7 +8,6 @@ return {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
-        "hrsh7th/cmp-emoji",
         "onsails/lspkind.nvim",
         {
             "zbirenbaum/copilot-cmp",
@@ -106,7 +105,6 @@ return {
                 { name = "nvim_lsp" },
                 { name = "buffer" },
                 { name = "path" },
-                { name = "emoji" },
                 { name = "copilot" },
             },
             view = {
