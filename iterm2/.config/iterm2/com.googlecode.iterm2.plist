@@ -2708,13 +2708,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.89019608497619629</real>
+				<real>0.99215686274509807</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.87450981140136719</real>
+				<real>0.83529411764705885</real>
 				<key>Red Component</key>
-				<real>0.87450981140136719</real>
+				<real>0.69019607843137254</real>
 			</dict>
 			<key>Selected Text Color (Dark)</key>
 			<dict>
