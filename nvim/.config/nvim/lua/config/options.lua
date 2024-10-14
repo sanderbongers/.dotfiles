@@ -3,7 +3,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Synchronize with system clipboard
-vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
+vim.schedule(function()
+    vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
+end)
 
 -- Highlight current line
 vim.opt.cursorline = true
