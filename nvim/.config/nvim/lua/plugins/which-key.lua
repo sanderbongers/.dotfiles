@@ -10,4 +10,9 @@ return {
             desc = "Show keymaps (which-key)",
         },
     },
+    opts = {
+        spec = {
+            { "<Leader>l", "<Cmd>Lazy<CR>", icon = { icon = "󰒲", color = "blue" } },
+        }
+    }
 }
