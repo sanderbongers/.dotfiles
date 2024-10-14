@@ -2237,13 +2237,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.93333333730697632</real>
+				<real>0.94901961088180542</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.55294120311737061</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.13333334028720856</real>
 			</dict>
 			<key>Link Color (Dark)</key>
 			<dict>
@@ -2278,13 +2278,13 @@ The script should do this: \(ai.prompt)</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.36078432202339172</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.72549021244049072</real>
 				<key>Red Component</key>
-				<real>0.99607843160629272</real>
+				<real>0.89803922176361084</real>
 			</dict>
 			<key>Match Background Color (Dark)</key>
 			<dict>
@@ -2405,7 +2405,7 @@ The script should do this: \(ai.prompt)</string>
 				<key>Green Component</key>
 				<real>0.84313725490196079</real>
 				<key>Red Component</key>
-				<real>0.70588235294117652</real>
+				<real>0.70588235294117641</real>
 			</dict>
 			<key>Selection Color (Dark)</key>
 			<dict>
@@ -2688,7 +2688,10 @@ The script should do this: \(ai.prompt)</string>
 		<string>Recent Directories</string>
 	</array>
 	<key>URLHandlersByGuid</key>
-	<dict/>
+	<dict>
+		<key>ssh</key>
+		<string>BD7A23B4-4C27-47C8-83BC-90D5C77B789E</string>
+	</dict>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
@@ -2708,6 +2711,6 @@ The script should do this: \(ai.prompt)</string>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<true/>
 	<key>kCPKUseSystemColorPicker</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
