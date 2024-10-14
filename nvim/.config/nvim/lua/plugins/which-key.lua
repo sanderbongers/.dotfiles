@@ -7,7 +7,7 @@ return {
             function()
                 require("which-key").show({ global = false })
             end,
-            desc = "Show keymaps (which-key)",
+            desc = "Buffer Keymaps (which-key)",
         },
     },
     opts = {
