@@ -2,11 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Synchronize with system clipboard
-vim.schedule(function()
-    vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
-end)
-
 -- Highlight current line
 vim.opt.cursorline = true
 
@@ -38,3 +33,8 @@ vim.opt.title = true
 -- Complete first match and list all matches
 vim.opt.wildignorecase = true
 vim.opt.wildmode = "list:full"
+
+-- Synchronize with system clipboard
+vim.schedule(function()
+    vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
+end)
