@@ -8,7 +8,7 @@ vim.opt.cursorline = true
 -- Block style cursor in all modes
 vim.opt.guicursor = ""
 
--- Case insensitive search, unless uppercase is used deliberately
+-- Ignore case when searching, unless the search pattern contains uppercase letters
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
