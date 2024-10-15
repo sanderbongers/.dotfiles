@@ -8,6 +8,3 @@ end
 abbr --add bs "brew services"
 abbr --add bc "php bin/console"
 abbr --add dotdot --regex '^\.\.+$' --function multicd
-
-# Disable Forgit aliases
-set -x FORGIT_NO_ALIASES true
