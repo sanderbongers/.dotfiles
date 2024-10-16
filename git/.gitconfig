@@ -5,7 +5,7 @@
     bd = branch -D
     bl = blame
     ca = commit --amend
-    cm = commit -m
+    cm = commit -m \"%\"
     co = checkout
     cob = checkout -b
     cp = cherry-pick
