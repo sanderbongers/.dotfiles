@@ -5,6 +5,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
         "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-nvim-lsp-signature-help",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-cmdline",
@@ -76,27 +77,33 @@ return {
                     symbol_map = { Copilot = "" },
                 }),
             },
-            mapping = {
-                ["<CR>"] = cmp.mapping.confirm({
-                    behavior = cmp.ConfirmBehavior.Replace,
-                    select = false,
-                }),
-                ["<Esc>"] = cmp.mapping.close(),
+            mapping = cmp.mapping.preset.insert({
                 ["<Tab>"] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
+                end),
                 ["<S-Tab>"] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_prev_item()
                     else
                         fallback()
                     end
-                end, { "i", "s" }),
-            },
+                end),
+                ["<Down>"] = cmp.mapping(cmp.mapping.select_next_item()),
+                ["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item()),
+                ["<Esc>"] = cmp.mapping.abort(),
+                ["<CR>"] = cmp.mapping(function(fallback)
+                    if cmp.get_active_entry() then
+                        cmp.confirm()
+                    else
+                        fallback()
+                    end
+                end),
+            }),
+            preselect = cmp.PreselectMode.Item,
             snippet = {
                 expand = function(args)
                     vim.snippet.expand(args.body)
@@ -104,6 +111,7 @@ return {
             },
             sources = {
                 { name = "nvim_lsp" },
+                { name = "nvim_lsp_signature_help" },
                 { name = "buffer" },
                 { name = "path" },
                 { name = "copilot" },
@@ -118,14 +126,20 @@ return {
         }
 
         cmp.setup.cmdline("/", {
-            mapping = cmp.mapping.preset.cmdline(),
+            mapping = cmp.mapping.preset.cmdline({
+                ["<Up>"] = cmp.mapping(cmp.mapping.select_next_item(), { "c" }),
+                ["<Down>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "c" }),
+            }),
             sources = {
                 { name = "buffer" },
             },
         })
 
         cmp.setup.cmdline(":", {
-            mapping = cmp.mapping.preset.cmdline(),
+            mapping = cmp.mapping.preset.cmdline({
+                ["<Up>"] = cmp.mapping(cmp.mapping.select_next_item(), { "c" }),
+                ["<Down>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "c" }),
+            }),
             sources = cmp.config.sources({
                 { name = "path" },
             }, {
