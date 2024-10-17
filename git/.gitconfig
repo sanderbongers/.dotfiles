@@ -5,7 +5,7 @@
     bd = branch -D
     bl = blame
     ca = commit --amend
-    cm = commit -m \"%\"
+    cm = commit -m \"!\"
     co = checkout
     cob = checkout -b
     cp = cherry-pick
@@ -38,8 +38,8 @@
 	helper = osxkeychain
 [delta]
     diff-so-fancy = true
-    file-decoration-style = "ol"
-    hunk-header-style = "omit"
+    file-decoration-style = ol
+    hunk-header-style = omit
     line-numbers = true
     navigate = true
 [diff]

@@ -9,5 +9,5 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 # Turn gitconfig aliases into Fish abbreviations
 for git_alias in (git config --get-regexp "^alias\." | string replace "alias." "g")
     echo $git_alias | read --delimiter " " --local alias --local command
-    abbr --add $alias --set-cursor "git $command"
+    abbr --add $alias --set-cursor=! "git $command"
 end
